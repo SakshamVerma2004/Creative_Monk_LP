@@ -1,0 +1,858 @@
+img {
+  user-select: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
+.topSection {
+  width: 100%;
+  background-color: #e5e7fcbd;
+  padding-bottom: 50px;
+}
+
+.middleSection {
+  width: 100%;
+  background-color: #e5e7fcbd;
+  height: 30px;
+}
+
+.animationSection {
+  width: 100%;
+  width: 1000px;
+  margin: auto;
+  padding-top: 150px;
+  padding-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.animationSection h1 {
+  font-size: 72px;
+  font-family: "Tiro Devanagari Hindi", serif;
+  text-align: center;
+  margin: auto;
+  margin-bottom: -20px;
+  z-index: 5;
+}
+
+.servicesText {
+  color: black;
+  margin: auto;
+  font-size: 72px;
+  margin-top: 80px;
+}
+
+.changeColorHeading {
+  color: #fc6404;
+}
+
+.animationSection p {
+  color: #7a7a7a;
+  margin-top: 20px;
+}
+
+.contactNowButton {
+  color: black;
+  height: 50px;
+  border-radius: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 30px;
+  font-size: 18px;
+  background-color: transparent;
+  border: 3px solid #fc6404;
+  font-weight: 600;
+  background-size: cover;
+}
+
+.leftImage {
+  position: absolute;
+  top: 100px;
+  left: -150px;
+  height: 300px;
+  width: 300px;
+}
+
+.topRight {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}
+
+.topLeft {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
+}
+
+.topLeftSvg {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  width: 150px;
+  height: 80px;
+}
+
+.topRightSvg {
+  position: absolute;
+  top: 50px;
+  right: -10px;
+  width: 150px;
+  height: 100px;
+}
+
+.bottomLeftSvg {
+  position: absolute;
+  bottom: -20px;
+  left: -60px;
+  width: 187px;
+  height: 108px;
+}
+
+.bottomRightSvg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 123px;
+  height: 71px;
+}
+
+/* ////////////////////////////////////// */
+
+.text_wrapper div {
+  font-size: 72px;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  font-family: "Tiro Devanagari Hindi", serif;
+  color: #fc6404;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.text1 {
+  animation: text1Animation 12s infinite;
+}
+
+.text2 {
+  animation: text2Animation 12s infinite;
+}
+
+.text3 {
+  animation: text3Animation 12s infinite;
+}
+
+.text4 {
+  animation: text4Animation 12s infinite;
+}
+
+@keyframes text1Animation {
+  0% {
+    font-size: 72px;
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+    font-size: 72px;
+  }
+  24% {
+    opacity: 0;
+    font-size: 55px;
+  }
+}
+
+@keyframes text2Animation {
+  18% {
+    opacity: 0;
+    font-size: 72px;
+  }
+  36% {
+    opacity: 1;
+    font-size: 72px;
+  }
+  48% {
+    opacity: 0;
+    font-size: 55px;
+  }
+}
+
+@keyframes text3Animation {
+  40% {
+    opacity: 0;
+    font-size: 72px;
+  }
+  60% {
+    opacity: 1;
+    font-size: 72px;
+  }
+  72% {
+    opacity: 0;
+    font-size: 55px;
+  }
+}
+
+@keyframes text4Animation {
+  66% {
+    opacity: 0;
+    font-size: 72px;
+  }
+  84% {
+    opacity: 1;
+    font-size: 72px;
+  }
+  96% {
+    opacity: 0.5;
+    font-size: 65px;
+  }
+  100% {
+    opacity: 0;
+    font-size: 55px;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .animationSection {
+    width: 900px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .animationSection h1 {
+    font-size: 50px;
+  }
+
+  @keyframes text1Animation {
+    0% {
+      font-size: 55px;
+      opacity: 0;
+    }
+    12% {
+      opacity: 1;
+      font-size: 55px;
+    }
+    24% {
+      opacity: 0;
+      font-size: 50px;
+    }
+  }
+
+  @keyframes text2Animation {
+    18% {
+      opacity: 0;
+      font-size: 55px;
+    }
+    36% {
+      opacity: 1;
+      font-size: 55px;
+    }
+    48% {
+      opacity: 0;
+      font-size: 50px;
+    }
+  }
+
+  @keyframes text3Animation {
+    40% {
+      opacity: 0;
+      font-size: 55px;
+    }
+    60% {
+      opacity: 1;
+      font-size: 55px;
+    }
+    72% {
+      opacity: 0;
+      font-size: 50px;
+    }
+  }
+
+  @keyframes text4Animation {
+    66% {
+      opacity: 0;
+      font-size: 55px;
+    }
+    84% {
+      opacity: 1;
+      font-size: 55px;
+    }
+    96% {
+      opacity: 0.5;
+      font-size: 53px;
+    }
+    100% {
+      opacity: 0;
+      font-size: 50px;
+    }
+  }
+
+  .text_wrapper div {
+    font-size: 50px;
+  }
+
+  .text1 {
+    animation: text1Animation 12s infinite;
+  }
+
+  .text2 {
+    animation: text2Animation 12s infinite;
+  }
+
+  .text3 {
+    animation: text3Animation 12s infinite;
+  }
+
+  .text4 {
+    animation: text4Animation 12s infinite;
+  }
+
+  .servicesText {
+    font-size: 50px;
+    margin-top: 70px;
+  }
+
+  .animationSection {
+    width: 700px;
+  }
+
+  .leftImage {
+    position: absolute;
+    top: 80px;
+    left: -120px;
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .leftImage {
+    position: absolute;
+    top: 140px;
+    left: -30px;
+    height: 200px;
+    width: 200px;
+  }
+
+  .bottomLeftSvg {
+    position: absolute;
+    bottom: -30px;
+    left: -10px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .animationSection {
+    width: 550px;
+  }
+
+  .animationSection h1 {
+    font-size: 35px;
+    margin-bottom: 0px;
+  }
+
+  .servicesText {
+    font-size: 35px;
+    margin-top: 50px;
+  }
+
+  @keyframes text1Animation {
+    0% {
+      font-size: 40px;
+      opacity: 0;
+    }
+    12% {
+      opacity: 1;
+      font-size: 40px;
+    }
+    24% {
+      opacity: 0;
+      font-size: 35px;
+    }
+  }
+
+  @keyframes text2Animation {
+    18% {
+      opacity: 0;
+      font-size: 40px;
+    }
+    36% {
+      opacity: 1;
+      font-size: 40px;
+    }
+    48% {
+      opacity: 0;
+      font-size: 35px;
+    }
+  }
+
+  @keyframes text3Animation {
+    40% {
+      opacity: 0;
+      font-size: 40px;
+    }
+    60% {
+      opacity: 1;
+      font-size: 40px;
+    }
+    72% {
+      opacity: 0;
+      font-size: 35px;
+    }
+  }
+
+  @keyframes text4Animation {
+    66% {
+      opacity: 0;
+      font-size: 40px;
+    }
+    84% {
+      opacity: 1;
+      font-size: 40px;
+    }
+    96% {
+      opacity: 0.5;
+      font-size: 37px;
+    }
+    100% {
+      opacity: 0;
+      font-size: 35px;
+    }
+  }
+
+  .text_wrapper div {
+    margin-top: 0px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .animationSection {
+    width: 450px;
+  }
+
+  .animationSection h1 {
+    font-size: 25px;
+    margin-bottom: 0px;
+  }
+
+  .servicesText {
+    font-size: 25px;
+    margin-top: 40px;
+  }
+
+  @keyframes text1Animation {
+    0% {
+      font-size: 30px;
+      opacity: 0;
+    }
+    12% {
+      opacity: 1;
+      font-size: 30px;
+    }
+    24% {
+      opacity: 0;
+      font-size: 25px;
+    }
+  }
+
+  @keyframes text2Animation {
+    18% {
+      opacity: 0;
+      font-size: 30px;
+    }
+    36% {
+      opacity: 1;
+      font-size: 30px;
+    }
+    48% {
+      opacity: 0;
+      font-size: 25px;
+    }
+  }
+
+  @keyframes text3Animation {
+    40% {
+      opacity: 0;
+      font-size: 30px;
+    }
+    60% {
+      opacity: 1;
+      font-size: 30px;
+    }
+    72% {
+      opacity: 0;
+      font-size: 25px;
+    }
+  }
+
+  @keyframes text4Animation {
+    66% {
+      opacity: 0;
+      font-size: 30px;
+    }
+    84% {
+      opacity: 1;
+      font-size: 30px;
+    }
+    96% {
+      opacity: 0.5;
+      font-size: 27px;
+    }
+    100% {
+      opacity: 0;
+      font-size: 25px;
+    }
+  }
+
+  .text_wrapper div {
+    margin-top: 0px;
+  }
+
+  .leftImage {
+    position: absolute;
+    top: 120px;
+    left: -30px;
+    height: 150px;
+    width: 150px;
+  }
+
+  .bottomLeftSvg {
+    position: absolute;
+    bottom: -30px;
+    left: -10px;
+  }
+
+  .topRight {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50px;
+    right: 40px;
+  }
+
+  .topLeft {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .animationSection {
+    width: 350px;
+  }
+
+  .animationSection h1 {
+    font-size: 22px;
+    margin-bottom: 0px;
+  }
+
+  .servicesText {
+    font-size: 22px;
+    margin-top: 37px;
+  }
+
+  @keyframes text1Animation {
+    0% {
+      font-size: 25px;
+      opacity: 0;
+    }
+    12% {
+      opacity: 1;
+      font-size: 25px;
+    }
+    24% {
+      opacity: 0;
+      font-size: 22px;
+    }
+  }
+
+  @keyframes text2Animation {
+    18% {
+      opacity: 0;
+      font-size: 25px;
+    }
+    36% {
+      opacity: 1;
+      font-size: 25px;
+    }
+    48% {
+      opacity: 0;
+      font-size: 22px;
+    }
+  }
+
+  @keyframes text3Animation {
+    40% {
+      opacity: 0;
+      font-size: 25px;
+    }
+    60% {
+      opacity: 1;
+      font-size: 25px;
+    }
+    72% {
+      opacity: 0;
+      font-size: 22px;
+    }
+  }
+
+  @keyframes text4Animation {
+    66% {
+      opacity: 0;
+      font-size: 25px;
+    }
+    84% {
+      opacity: 1;
+      font-size: 25px;
+    }
+    96% {
+      opacity: 0.5;
+      font-size: 23px;
+    }
+    100% {
+      opacity: 0;
+      font-size: 22px;
+    }
+  }
+
+  .text_wrapper div {
+    margin-top: 0px;
+  }
+
+  .leftImage {
+    position: absolute;
+    top: 130px;
+    left: -20px;
+    height: 120px;
+    width: 120px;
+  }
+
+  .bottomLeftSvg {
+    position: absolute;
+    bottom: -30px;
+    left: -10px;
+    width: 130px;
+    height: 70px;
+  }
+
+  .topRight {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+  }
+
+  .topLeft {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: -30px;
+    left: -15px;
+  }
+
+  .topLeftSvg {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 100px;
+    height: 50px;
+  }
+
+  .topRightSvg {
+    position: absolute;
+    top: 50px;
+    right: -10px;
+    width: 100px;
+    height: 50px;
+  }
+
+  .bottomRightSvg {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 100px;
+    height: 40px;
+  }
+
+  .contactNowButton {
+    color: black;
+    height: 30px;
+    border-radius: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+    font-size: 15px;
+    background-color: transparent;
+    border: 3px solid #fc6404;
+    font-weight: 600;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .animationSection {
+    width: 300px;
+  }
+
+  .animationSection h1 {
+    font-size: 25px;
+    margin-bottom: 0px;
+  }
+
+  .servicesText {
+    font-size: 25px;
+    margin-top: 37px;
+  }
+
+  @keyframes text1Animation {
+    0% {
+      font-size: 30px;
+      opacity: 0;
+    }
+    12% {
+      opacity: 1;
+      font-size: 30px;
+    }
+    24% {
+      opacity: 0;
+      font-size: 25px;
+    }
+  }
+
+  @keyframes text2Animation {
+    18% {
+      opacity: 0;
+      font-size: 30px;
+    }
+    36% {
+      opacity: 1;
+      font-size: 30px;
+    }
+    48% {
+      opacity: 0;
+      font-size: 25px;
+    }
+  }
+
+  @keyframes text3Animation {
+    40% {
+      opacity: 0;
+      font-size: 30px;
+    }
+    60% {
+      opacity: 1;
+      font-size: 30px;
+    }
+    72% {
+      opacity: 0;
+      font-size: 25px;
+    }
+  }
+
+  @keyframes text4Animation {
+    66% {
+      opacity: 0;
+      font-size: 30px;
+    }
+    84% {
+      opacity: 1;
+      font-size: 30px;
+    }
+    96% {
+      opacity: 0.5;
+      font-size: 27px;
+    }
+    100% {
+      opacity: 0;
+      font-size: 25px;
+    }
+  }
+
+  .text_wrapper div {
+    margin-top: 0px;
+  }
+
+  .leftImage {
+    position: absolute;
+    top: 150px;
+    left: -20px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .bottomLeftSvg {
+    position: absolute;
+    bottom: -30px;
+    left: -10px;
+    width: 130px;
+    height: 70px;
+  }
+
+  .topRight {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+  }
+
+  .topLeft {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: -30px;
+    left: -35px;
+  }
+
+  .topLeftSvg {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 100px;
+    height: 50px;
+  }
+
+  .topRightSvg {
+    position: absolute;
+    top: 50px;
+    right: -10px;
+    width: 100px;
+    height: 50px;
+  }
+
+  .bottomRightSvg {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 100px;
+    height: 40px;
+  }
+
+  .contactNowButton {
+    color: black;
+    height: 30px;
+    border-radius: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+    font-size: 15px;
+    background-color: transparent;
+    border: 3px solid #fc6404;
+    font-weight: 600;
+  }
+}

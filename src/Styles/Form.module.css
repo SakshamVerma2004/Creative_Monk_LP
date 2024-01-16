@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+.form {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  opacity: 0;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  background-color: white;
+}
+
+.showForm {
+  opacity: 1;
+  visibility: visible;
+}
+
+.closeForm {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: 0.5s closeForm ease-in-out;
+  opacity: 1;
+  animation-fill-mode: forwards;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  background-color: white;
+}
+
+@keyframes closeForm {
+  from {
+    opacity: 1;
+    display: flex;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes showForm {
+  from {
+    opacity: 0;
+    display: none;
+  }
+  to {
+    opacity: 1;
+    display: flex;
+  }
+}
+
+.containerForm {
+  width: 450px;
+  height: 470px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px;
+}
+
+.cancelSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.cancelSection img {
+  cursor: pointer;
+}
+
+.containerForm h1 {
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-size: 30px;
+  margin: auto;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.containerForm p {
+  width: 350px;
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+  color: #7a7a7a;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.containerForm input {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  height: 35px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.containerForm select {
+  width: 100%;
+  margin-top: 10px;
+  height: 35px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+
+.containerForm button {
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #fc6404;
+  background-color: #fc6404;
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+
+@media all and (max-width: 500px){
+  .containerForm {
+    width: 300px;
+    height: 470px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+  }
+
+  .containerForm p {
+    width: 250px;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+
+  .containerForm h1 {
+    font-family: "Tiro Devanagari Hindi", serif;
+    font-size: 25px;
+    margin: auto;
+    text-align: center;
+    margin-top: -10px;
+  }
+}

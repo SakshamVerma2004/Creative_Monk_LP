@@ -1,0 +1,150 @@
+.footer {
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 100px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.containerFooter {
+  width: 1440px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  align-items: stretch;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.logoSection img {
+  width: 117px;
+  height: 33px;
+  cursor: pointer;
+}
+
+.footer p {
+  color: #7a7a7a;
+  font-weight: 600;
+}
+
+.socialSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.socialBackgroundSection {
+  width: 50px;
+  height: 50px;
+  background-color: #fc6404;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer h2 {
+  color: #fc6404;
+  font-size: 30px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.infoPara span {
+  margin-right: 5px;
+}
+
+.footerContactForm {
+  background-color: #fc6404;
+  color: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+}
+
+.footerContactForm h2 {
+  color: white;
+  font-size: 25px;
+}
+
+.footerContactForm input {
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  border-radius: 3px;
+  height: 30px;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+.footerContactForm button {
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+@media all and (max-width: 1440px) {
+  .containerFooter {
+    width: 1100px;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .containerFooter {
+    width: 900px;
+    grid-template-columns: repeat(2, 49%);
+    row-gap: 50px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .containerFooter {
+    width: 700px;
+    grid-template-columns: repeat(2, 49%);
+    row-gap: 50px;
+  }
+}
+
+@media all and (max-width:750px){
+  .containerFooter {
+    width: 550px;
+    grid-template-columns: repeat(1, 100%);
+    row-gap: 50px;
+  }
+}
+
+@media all and (max-width: 600px){
+  .containerFooter {
+    width: 450px;
+    grid-template-columns: repeat(1, 100%);
+    row-gap: 50px;
+  }
+}
+
+@media all and (max-width: 500px){
+  .containerFooter {
+    width: 350px;
+    grid-template-columns: repeat(1, 100%);
+    row-gap: 50px;
+  }
+}
+
+@media all and (max-width: 400px){
+  .containerFooter {
+    width: 300px;
+    grid-template-columns: repeat(1, 100%);
+    row-gap: 50px;
+  }
+}

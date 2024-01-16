@@ -1,0 +1,409 @@
+.navbar {
+  width: 100%;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.innerNavbarSection {
+  width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 180px;
+  height: 50px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.navbarOptionsSection {
+  width: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbarOptionsSection a {
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+  height: auto;
+  transition: 0.3s color;
+}
+
+.navbarOptionsSection a:hover {
+  color: #fc6404;
+}
+
+.navbarOptionsSection a div {
+  width: 100%;
+  border-bottom: 3.5px solid transparent;
+  text-align: center;
+  height: 25px;
+  margin-top: -5px;
+  transition: 0.3s border-bottom;
+}
+
+.navbarOptionsSection a div:hover {
+  border-bottom: 3.5px solid #fc6404;
+}
+
+.connectButton {
+  height: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 10px;
+  border: 1px solid #fc6404;
+  background-color: #fc6404;
+  color: white;
+  cursor: pointer;
+}
+
+.hamburgerIcon {
+  fill: #fc6404;
+  cursor: pointer;
+  height: 30px;
+  display: none;
+}
+
+.mobileMenu {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  top: 0;
+  right: 0;
+  z-index: 50;
+  opacity: 0;
+  animation: 1s showHamburger linear;
+  animation-fill-mode: forwards;
+}
+
+.closeMobileMenu {
+  height: 100vh;
+  position: fixed;
+  width: 300px;
+  background-color: transparent;
+  top: 0;
+  right: 0;
+  z-index: 50;
+  opacity: 1;
+  animation: 1s closeHamburger linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showHamburger {
+  from {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes closeHamburger {
+  from {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+}
+
+.nestedMobileMenu {
+  position: absolute;
+  width: 350px;
+  height: 100vh;
+  background-color: #fc6404;
+  right: -350px;
+  top: 0;
+  z-index: 51;
+  transition: right 1s ease;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+}
+
+.showNestedMobileMenu {
+  right: 0;
+}
+
+.closeNestedMobileMenu {
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  background-color: #fc6404;
+  z-index: 51;
+  top: 0;
+  opacity: 1;
+  animation: 0.5s closeHamburger linear;
+  animation-fill-mode: forwards;
+}
+
+.sidebarTopSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.sidebarTopSection img:first-child {
+  width: 202px;
+  height: 65px;
+}
+
+.closeIconForMobileMenu {
+  filter: invert(1);
+  cursor: pointer;
+  height: 30px;
+  transition: 0.5s filter ease;
+}
+
+.closeIconForMobileMenu:hover {
+  filter: invert(0);
+}
+
+.mobileMenuLinksSection {
+  margin-top: 40px;
+  padding-left: 20px;
+}
+
+.mobileMenuLinksSection a {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  border-bottom: 1px solid white;
+  display: block;
+  margin-bottom: 35px;
+}
+
+.socialMobileMenuSection {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+.followUsOnPara {
+  color: white;
+  font-size: 25px;
+  padding-left: 20px;
+  font-weight: 400;
+  margin-top: 60px;
+  margin-bottom: -20px;
+}
+
+.socialFacebookSection {
+  width: 50px;
+  height: 50px;
+  background-color: #3b5998;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialLinkedinSection {
+  width: 50px;
+  height: 50px;
+  background-color: #0077b5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialInstagramSection {
+  background-color: #262626;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+@media all and (max-width: 1440px) {
+  .innerNavbarSection {
+    width: 1100px;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .innerNavbarSection {
+    width: 900px;
+  }
+
+  .navbarOptionsSection {
+    width: 450px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .navbarOptionsSection {
+    display: none;
+  }
+
+  .innerNavbarSection {
+    width: 700px;
+  }
+
+  .connectButton {
+    display: none;
+  }
+
+  .hamburgerIcon {
+    display: block;
+    height: 40px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .innerNavbarSection {
+    width: 550px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .innerNavbarSection {
+    width: 450px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .innerNavbarSection {
+    width: 350px;
+  }
+
+  .logo {
+    width: 120px;
+    height: 30px;
+  }
+
+  .hamburgerIcon {
+    display: block;
+    height: 30px;
+  }
+
+  .sidebarTopSection img:first-child {
+    width: 140px;
+    height: 41.5px;
+  }
+  
+  .closeIconForMobileMenu {
+    filter: invert(1);
+    cursor: pointer;
+    height: 20px;
+    transition: 0.5s filter ease;
+  }
+  
+  .closeIconForMobileMenu:hover {
+    filter: invert(0);
+  }
+  
+  .mobileMenuLinksSection {
+    margin-top: 40px;
+    padding-left: 20px;
+  }
+  
+  .mobileMenuLinksSection a {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+    display: block;
+    margin-bottom: 35px;
+  }
+  
+  .socialMobileMenuSection {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+  }
+  
+  .followUsOnPara {
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+    font-weight: 400;
+    margin-top: 60px;
+    margin-bottom: -20px;
+  }
+  
+  .socialFacebookSection {
+    width: 40px;
+    height: 40px;
+    background-color: #3b5998;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .socialLinkedinSection {
+    width: 40px;
+    height: 40px;
+    background-color: #0077b5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .socialInstagramSection {
+    background-color: #262626;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
+
+  .nestedMobileMenu {
+    position: absolute;
+    width: 250px;
+    height: 100vh;
+    background-color: #fc6404;
+    right: -250px;
+    top: 0;
+    z-index: 51;
+    transition: right 1s ease;
+    padding-left: 5px;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+  
+  .showNestedMobileMenu {
+    right: 0;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .innerNavbarSection {
+    width: 300px;
+  }
+}

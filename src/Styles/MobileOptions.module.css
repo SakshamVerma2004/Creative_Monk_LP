@@ -1,0 +1,51 @@
+.mobileOptions {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: fixed;
+  z-index: 90;
+  top: 85vh;
+  left: 0;
+  display: none;
+}
+
+.callSection {
+  width: 50px;
+  height: 50px;
+  background-color: #fc6404;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.callSection img {
+  width: 30px;
+  height: 30px;
+  filter: invert(1);
+}
+
+.whatsappSection {
+  width: 50px;
+  height: 50px;
+  background-color: #3afc04;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.whatsappSection img {
+  width: 100%;
+  height: 100%;
+}
+
+@media all and (max-width: 500px){
+    .mobileOptions{
+        display: flex;
+    }
+}

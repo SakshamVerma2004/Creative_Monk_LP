@@ -1,0 +1,1272 @@
+.bodyContainer {
+  width: 100%;
+}
+
+img {
+  user-select: none;
+}
+
+.innerBodyContainer {
+  width: 1440px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* .firstCarouselBlock{
+  border: 1px solid black;
+} */
+
+.firstCarouselItem {
+  width: 90%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  border-radius: 5px;
+  border: 0.5px solid #fc9953;
+}
+
+.firstCarouselItem img {
+  width: 90%;
+  height: 90%;
+  background-color: cover;
+  object-fit: contain;
+}
+
+.bestAgencySection {
+  box-sizing: border-box;
+  margin-bottom: 100px;
+  width: 100%;
+  padding: 70px;
+  text-align: center;
+  background-color: #fc6404;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bestAgencySection h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-size: 40px;
+  color: white;
+  word-spacing: 5px;
+}
+
+.enquiryButton {
+  font-family: "Roboto", sans-serif;
+  height: 50px;
+  font-size: 18px;
+  color: #fc6404;
+  background-color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.creativeMonkServicesSection {
+  margin: auto;
+  box-sizing: border-box;
+  margin-bottom: 100px;
+  width: 1440px;
+  text-align: center;
+}
+
+.creativeMonkServicesSection h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-size: 50px;
+}
+
+.servicesPara {
+  width: 80%;
+  margin: auto;
+  color: #7a7a7a;
+}
+
+.servicesGridBlock {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.servicesImage {
+  width: 40%;
+  height: 450px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.servicesDetailsBlock {
+  width: 58%;
+  display: grid;
+  grid-template-columns: repeat(2, 49%);
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.serviceDetail {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  border: 1px solid #7a7a7a;
+  border-radius: 5px;
+  color: #7a7a7a;
+}
+
+.serviceIconSection {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #fc6404;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactNowButton {
+  margin-top: 50px;
+  color: white;
+  background-color: #fc6404;
+  border: 1px solid #fc6404;
+  font-size: 18px;
+  font-weight: 600;
+  height: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.5) 5.95px 5.95px 2.6px;
+}
+
+.ourServicesParentSection {
+  width: 100%;
+  background-color: #fc6404;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+  color: white;
+}
+
+.ourServicesSection {
+  box-sizing: border-box;
+  width: 1440px;
+  margin: auto;
+}
+
+.ourServicesSection h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Tiro Devanagari Hindi", serif;
+}
+
+.ourServicesSection h6 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.ourServicesSection h1 {
+  font-size: 50px;
+}
+
+.ourServicesGridSection {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 49%);
+  justify-content: space-between;
+  row-gap: 100px;
+}
+
+.ourServicesIndividualServiceSection {
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid white;
+  box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 15px;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.ourServicesSvgSection {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: 43%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ourServicesIndividualServiceSection h2 {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.enquiryBtn {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #fc6404;
+  background-color: white;
+  border: 1px solid white;
+  font-size: 16px;
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.ourPortfolioSection {
+  width: 1440px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.ourPortfolioSection h1 {
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-size: 50px;
+}
+
+.portFolioLinkSection {
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.portFolioLinkSection p {
+  margin: auto;
+  cursor: pointer;
+}
+
+.portfolioResultsSection {
+  width: 100%;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 473.3px);
+  align-items: stretch;
+  row-gap: 10px;
+  justify-content: space-between;
+}
+
+.portfolioResultsSection img {
+  width: 100%;
+  transition: 0.5s filter;
+}
+
+.portfolioResultsSection img:hover {
+  filter: brightness(0.6);
+}
+
+.ourPortfolioSection h5 {
+  color: #fc6404;
+  font-size: 20px;
+}
+
+.gotQuestionSection {
+  width: 1440px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.gotQuestionSection h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Tiro Devanagari Hindi", serif;
+}
+
+.gotQuestionSection h1 {
+  text-align: center;
+}
+
+.gotQuestionSection h1 {
+  font-size: 50px;
+}
+
+.gotQuestionGridSection {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 49%);
+  align-items: stretch;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.gotQuestionBackgroundImageSection {
+  width: 100%;
+  border-radius: 10px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gotQuestionInfoSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.gotQuestionSvgSection {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gotQuestionNestedInfoSection {
+  width: 400px;
+  text-align: left;
+}
+
+.gotQuestionNestedInfoSection h3 {
+  font-size: 40px;
+  margin: auto;
+}
+
+.gotQuestionNestedInfoSection p {
+  font-weight: 600;
+  font-size: 20px;
+  margin: auto;
+}
+
+.gotQuestionFormSection {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: left;
+  box-sizing: border-box;
+  color: black;
+}
+
+.questionInputSection {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.questionInputSection h3 {
+  color: #fc6404;
+  margin: auto;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.questionInputSection h3 span {
+  color: black;
+}
+
+.questionInputSection input {
+  width: 100%;
+  height: 50px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+.questionInputSection select {
+  width: 100%;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  padding-left: 10px;
+  color: gray;
+  border-radius: 5px;
+  padding-right: 10px;
+  height: 50px;
+}
+
+.submitButton {
+  width: 100%;
+  height: 40px;
+  font-size: 17px;
+  border-radius: 5px;
+  background-color: #fc6404;
+  color: white;
+  border: 1px solid #fc6404;
+  cursor: pointer;
+}
+
+.testimonialsSection {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+  background-color: #fc6404;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.containerTestimonialsSection {
+  width: 1440px;
+  margin: auto;
+}
+
+.containerTestimonialsSection h1 {
+  text-align: center;
+  color: white;
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-size: 50px;
+  margin: auto;
+}
+
+.testimonialsGridSection {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.secondCarouselBlock {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  padding-top: 0;
+}
+
+.commentBox {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.triangle img {
+  transform: rotate(180deg);
+  margin-top: -4px;
+  filter: invert(1);
+}
+
+.personImageSection {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 30px;
+  background-size: cover;
+}
+
+.personImageSection img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.person_name {
+  color: white;
+  font-weight: 600;
+}
+
+.gotQuestionSvg {
+  height: 40px;
+  width: 40px;
+}
+
+@media all and (max-width: 1440px) {
+  .creativeMonkServicesSection {
+    width: 1100px;
+  }
+
+  .ourServicesSection {
+    width: 1100px;
+  }
+
+  .ourPortfolioSection {
+    width: 1100px;
+  }
+
+  .portfolioResultsSection {
+    grid-template-columns: repeat(3, 363.3px);
+  }
+
+  .gotQuestionSection {
+    width: 1100px;
+  }
+
+  .gotQuestionSvgSection {
+    width: 55px;
+    height: 45px;
+  }
+
+  .gotQuestionSvg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .containerTestimonialsSection {
+    width: 1100px;
+  }
+
+  .innerBodyContainer {
+    width: 1100px;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .creativeMonkServicesSection {
+    width: 900px;
+  }
+
+  .ourServicesSection {
+    width: 900px;
+  }
+
+  .portFolioLinkSection {
+    width: 900px;
+  }
+
+  .ourPortfolioSection {
+    width: 900px;
+  }
+
+  .portfolioResultsSection {
+    grid-template-columns: repeat(3, 296.7px);
+  }
+
+  .gotQuestionSection {
+    width: 900px;
+  }
+
+  .gotQuestionSvgSection {
+    width: 70px;
+    height: 50px;
+  }
+
+  .containerTestimonialsSection {
+    width: 900px;
+  }
+
+  .innerBodyContainer {
+    width: 900px;
+  }
+
+  .gotQuestionInfoSection {
+    gap: 30px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .innerBodyContainer {
+    width: 700px;
+  }
+
+  .bestAgencySection h1 {
+    font-size: 30px;
+  }
+
+  .creativeMonkServicesSection h1 {
+    font-size: 35px;
+  }
+
+  .creativeMonkServicesSection {
+    width: 700px;
+  }
+
+  .servicesGridBlock {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .servicesImage {
+    width: 80%;
+    height: 450px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  .servicesDetailsBlock {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 10px;
+  }
+
+  .ourServicesSection h1 {
+    font-size: 30px;
+  }
+
+  .ourServicesSection {
+    width: 700px;
+  }
+
+  .ourServicesSvgSection {
+    left: 36%;
+  }
+
+  .portFolioLinkSection {
+    width: 700px;
+  }
+
+  .ourPortfolioSection {
+    width: 700px;
+  }
+
+  .portfolioResultsSection {
+    grid-template-columns: repeat(2, 345px);
+  }
+
+  .gotQuestionSection h1 {
+    font-size: 30px;
+  }
+
+  .gotQuestionGridSection {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 80%);
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    row-gap: 50px;
+  }
+
+  .gotQuestionSvgSection {
+    width: 80px;
+    height: 80px;
+  }
+
+  .gotQuestionSvg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .containerTestimonialsSection {
+    width: 700px;
+  }
+
+  .ourPortfolioSection h1 {
+    font-size: 30px;
+  }
+
+  .gotQuestionSection {
+    width: 700px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .loadingGif {
+    width: 50%;
+  }
+
+  .innerBodyContainer {
+    width: 550px;
+  }
+
+  .bestAgencySection h1 {
+    font-size: 30px;
+  }
+
+  .creativeMonkServicesSection h1 {
+    font-size: 35px;
+  }
+
+  .creativeMonkServicesSection {
+    width: 550px;
+  }
+
+  .servicesGridBlock {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .servicesImage {
+    width: 80%;
+    height: 350px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  .servicesDetailsBlock {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 10px;
+  }
+
+  .ourServicesSection h1 {
+    font-size: 30px;
+  }
+
+  .ourServicesSection {
+    width: 550px;
+  }
+
+  .ourServicesSvgSection {
+    left: 42%;
+  }
+
+  .portFolioLinkSection {
+    width: 550px;
+  }
+
+  .ourPortfolioSection {
+    width: 550px;
+  }
+
+  .portfolioResultsSection {
+    grid-template-columns: repeat(2, 270px);
+  }
+
+  .gotQuestionSection h1 {
+    font-size: 30px;
+  }
+
+  .gotQuestionGridSection {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 80%);
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    row-gap: 50px;
+  }
+
+  .gotQuestionSvgSection {
+    width: 70px;
+    height: 50px;
+  }
+
+  .gotQuestionSvg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .containerTestimonialsSection {
+    width: 550px;
+  }
+
+  .ourPortfolioSection h1 {
+    font-size: 30px;
+  }
+
+  .gotQuestionSection {
+    width: 550px;
+  }
+
+  .ourServicesGridSection {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    justify-content: space-between;
+    row-gap: 100px;
+  }
+
+  .gotQuestionNestedInfoSection h3 {
+    font-size: 30px;
+    margin: auto;
+  }
+
+  .gotQuestionNestedInfoSection p {
+    font-weight: 600;
+    font-size: 17px;
+    margin: auto;
+  }
+
+  .portFolioLinkSection {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .firstCarouselBlock{
+    margin-left: 20px;
+  }
+
+  .innerBodyContainer {
+    width: 450px;
+  }
+
+  .firstCarouselItem {
+    height: 150px;
+  }
+
+  .bestAgencySection h1 {
+    font-size: 25px;
+  }
+
+  .creativeMonkServicesSection h1 {
+    font-size: 30px;
+  }
+
+  .creativeMonkServicesSection {
+    width: 450px;
+  }
+
+  .servicesGridBlock {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .servicesImage {
+    width: 80%;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  .servicesDetailsBlock {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 10px;
+  }
+
+  .ourServicesSection h1 {
+    font-size: 25px;
+  }
+
+  .ourServicesSection {
+    width: 450px;
+  }
+
+  .ourServicesSvgSection {
+    left: 40%;
+  }
+
+  .portFolioLinkSection {
+    width: 450px;
+  }
+
+  .ourPortfolioSection {
+    width: 450px;
+  }
+
+  .portfolioResultsSection {
+    grid-template-columns: repeat(2, 220px);
+  }
+
+  .gotQuestionSection h1 {
+    font-size: 25px;
+  }
+
+  .gotQuestionGridSection {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 80%);
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    row-gap: 50px;
+  }
+
+  .gotQuestionSvgSection {
+    width: 70px;
+    height: 40px;
+  }
+
+  .gotQuestionSvg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .containerTestimonialsSection {
+    width: 450px;
+  }
+
+  .ourPortfolioSection h1 {
+    font-size: 25px;
+  }
+
+  .gotQuestionSection {
+    width: 450px;
+  }
+
+  .ourServicesGridSection {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    justify-content: space-between;
+    row-gap: 100px;
+  }
+
+  .gotQuestionNestedInfoSection h3 {
+    font-size: 25px;
+    margin: auto;
+  }
+
+  .gotQuestionNestedInfoSection p {
+    font-weight: 600;
+    font-size: 15px;
+    margin: auto;
+  }
+
+  .portFolioLinkSection {
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .firstCarouselBlock{
+    margin-left: 25px;
+  }
+
+  .innerBodyContainer {
+    width: 350px;
+  }
+
+  .firstCarouselItem {
+    height: 150px;
+  }
+
+  .bestAgencySection {
+    padding: 35px;
+  }
+
+  .bestAgencySection h1 {
+    font-size: 20px;
+  }
+
+  .creativeMonkServicesSection h1 {
+    font-size: 25px;
+  }
+
+  .creativeMonkServicesSection {
+    width: 350px;
+  }
+
+  .servicesGridBlock {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .servicesImage {
+    width: 80%;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  .servicesDetailsBlock {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 10px;
+  }
+
+  .ourServicesSection h1 {
+    font-size: 25px;
+  }
+
+  .ourServicesSection {
+    width: 350px;
+  }
+
+  .ourServicesSvgSection {
+    left: 35%;
+  }
+
+  .portFolioLinkSection {
+    width: 350px;
+    flex-direction: column;
+    margin-top: 30px;
+    row-gap: 10px;
+  }
+
+  .ourPortfolioSection {
+    width: 350px;
+  }
+
+  .portfolioResultsSection {
+    grid-template-columns: repeat(2, 170px);
+  }
+
+  .gotQuestionSection h1 {
+    font-size: 25px;
+  }
+
+  .gotQuestionGridSection {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    row-gap: 50px;
+  }
+
+  .gotQuestionSvgSection {
+    width: 70px;
+    height: 35px;
+  }
+
+  .gotQuestionSvg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .containerTestimonialsSection {
+    width: 350px;
+  }
+
+  .ourPortfolioSection h1 {
+    font-size: 25px;
+  }
+
+  .gotQuestionSection {
+    width: 350px;
+  }
+
+  .ourServicesGridSection {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    justify-content: space-between;
+    row-gap: 100px;
+  }
+
+  .gotQuestionNestedInfoSection h3 {
+    font-size: 25px;
+    margin: auto;
+  }
+
+  .gotQuestionNestedInfoSection p {
+    font-weight: 600;
+    font-size: 15px;
+    margin: auto;
+  }
+
+  .portFolioLinkSection {
+    font-size: 15px;
+  }
+
+  .servicesPara {
+    font-size: 15px;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .innerBodyContainer {
+    width: 300px;
+  }
+
+  .firstCarouselItem {
+    height: 150px;
+  }
+
+  .bestAgencySection {
+    padding: 35px;
+  }
+
+  .bestAgencySection h1 {
+    font-size: 20px;
+  }
+
+  .creativeMonkServicesSection h1 {
+    font-size: 25px;
+  }
+
+  .creativeMonkServicesSection {
+    width: 300px;
+  }
+
+  .servicesGridBlock {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .servicesImage {
+    width: 80%;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  .servicesDetailsBlock {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 10px;
+  }
+
+  .ourServicesSection h1 {
+    font-size: 25px;
+  }
+
+  .ourServicesSection {
+    width: 300px;
+  }
+
+  .ourServicesSvgSection {
+    left: 34%;
+  }
+
+  .portFolioLinkSection {
+    width: 300px;
+    flex-direction: column;
+    margin-top: 30px;
+    row-gap: 10px;
+  }
+
+  .ourPortfolioSection {
+    width: 300px;
+  }
+
+  .portfolioResultsSection {
+    grid-template-columns: repeat(1, 300px);
+  }
+
+  .gotQuestionSection h1 {
+    font-size: 25px;
+  }
+
+  .gotQuestionGridSection {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    row-gap: 50px;
+  }
+
+  .gotQuestionSvgSection {
+    width: 70px;
+    height: 35px;
+  }
+
+  .gotQuestionSvg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .containerTestimonialsSection {
+    width: 300px;
+  }
+
+  .ourPortfolioSection h1 {
+    font-size: 25px;
+  }
+
+  .gotQuestionSection {
+    width: 300px;
+  }
+
+  .ourServicesGridSection {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    justify-content: space-between;
+    row-gap: 100px;
+  }
+
+  .gotQuestionNestedInfoSection h3 {
+    font-size: 25px;
+    margin: auto;
+  }
+
+  .gotQuestionNestedInfoSection p {
+    font-weight: 600;
+    font-size: 15px;
+    margin: auto;
+  }
+
+  .portFolioLinkSection {
+    font-size: 15px;
+  }
+
+  .servicesPara {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .questionInputSection h3 {
+    font-size: 15px;
+  }
+
+  .gotQuestionFormSection {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .gotQuestionBackgroundImageSection {
+    width: 100%;
+    border-radius: 10px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
