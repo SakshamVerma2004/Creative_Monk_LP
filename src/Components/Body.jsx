@@ -8,9 +8,92 @@ import triangleSvg from "../Assets/change_history_FILL1_wght400_GRAD0_opsz24.svg
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../Context/AuthContextProvider";
 import loadingGif from "../Assets/loadingGif.webp";
+
 import ui1 from "../Assets/ui-1.png";
 import ui2 from "../Assets/ui-2.png";
 import ui3 from "../Assets/ui-3.png";
+
+import social1 from "../Assets/social-1.jpg";
+import social2 from "../Assets/social-2.jpg";
+import social3 from "../Assets/social-3.jpg";
+import social4 from "../Assets/social-4.jpg";
+import social5 from "../Assets/social-5.jpg";
+import social6 from "../Assets/social-6.jpg";
+import social7 from "../Assets/social-7.jpg";
+import social8 from "../Assets/social-8.jpg";
+import social9 from "../Assets/social-9.jpg";
+import social10 from "../Assets/social-10.jpg";
+import social11 from "../Assets/social-11.jpg";
+import social12 from "../Assets/social-12.jpg";
+
+import web1 from "../Assets/web-1.jpeg";
+import web2 from "../Assets/web-2.jpeg";
+import web3 from "../Assets/web-3.jpeg";
+import web4 from "../Assets/web-4.jpg";
+import web5 from "../Assets/web-5.jpg";
+import web6 from "../Assets/web-6.jpeg";
+import web7 from "../Assets/web-7.jpeg";
+import web8 from "../Assets/web-8.jpeg";
+import web9 from "../Assets/web-9.jpeg";
+import web10 from "../Assets/web-10.jpg";
+import web11 from "../Assets/web-11.jpg";
+import web12 from "../Assets/web-12.jpg";
+import web13 from "../Assets/web-13.jpg";
+import web14 from "../Assets/web-14.jpg";
+import web15 from "../Assets/web-15.jpg";
+import web16 from "../Assets/web-16.jpg";
+import web17 from "../Assets/web-17.jpg";
+import web18 from "../Assets/web-18.jpg";
+import web19 from "../Assets/web-19.png";
+import web20 from "../Assets/web-20.png";
+
+import pack1 from "../Assets/pack-1.jpg";
+import pack2 from "../Assets/pack-2.jpg";
+import pack3 from "../Assets/pack-3.jpeg";
+import pack4 from "../Assets/pack-4.jpeg";
+import pack5 from "../Assets/pack-5.png";
+import pack6 from "../Assets/pack-6.png";
+import pack7 from "../Assets/pack-7.png";
+import pack8 from "../Assets/pack-8.png";
+import pack9 from "../Assets/pack-9.png";
+
+import logo1 from "../Assets/logo-1.png";
+import logo2 from "../Assets/logo-2.jpg";
+import logo3 from "../Assets/logo-3.png";
+import logo4 from "../Assets/logo-4.png";
+import logo5 from "../Assets/logo-5.png";
+import logo6 from "../Assets/logo-6.png";
+import logo7 from "../Assets/logo-7.png";
+import logo8 from "../Assets/logo-8.png";
+import logo9 from "../Assets/logo-9.png";
+import logo10 from "../Assets/logo-10.png";
+
+import fc1 from "../Assets/fc1.png";
+import fc2 from "../Assets/fc2.png";
+import fc3 from "../Assets/fc3.webp";
+import fc4 from "../Assets/fc4.png";
+import fc5 from "../Assets/fc5.png";
+import fc6 from "../Assets/fc6.png";
+import fc7 from "../Assets/fc7.png";
+import fc8 from "../Assets/fc8.jpg";
+import fc9 from "../Assets/fc9.png";
+import fc10 from "../Assets/fc10.png";
+import fc11 from "../Assets/fc11.png";
+import fc12 from "../Assets/fc12.png";
+import fc13 from "../Assets/fc13.png";
+import fc14 from "../Assets/fc14.png";
+import fc15 from "../Assets/fc15.png";
+import fc16 from "../Assets/fc16.png";
+import fc17 from "../Assets/fc17.png";
+import fc18 from "../Assets/fc18.png";
+import fc19 from "../Assets/fc19.png";
+import fc20 from "../Assets/fc20.png";
+import fc21 from "../Assets/fc21.png";
+import fc22 from "../Assets/fc22.png";
+import fc23 from "../Assets/fc23.png";
+import fc24 from "../Assets/fc24.png";
+import fc25 from "../Assets/fc25.png";
+import fc26 from "../Assets/fc26.png";
 
 let Body = () => {
   let [successMessage, setSuccessMessage] = useState(false);
@@ -112,33 +195,32 @@ let Body = () => {
     "Item 10",
   ];
   let firstCarouselImages = [
-    "https://creativemonk.in/wp-content/uploads/2023/11/studio-punjab.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/4-1.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/16.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/15.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/23-1.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/logo-with-tagline-768x322.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/natural-logo.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/1048-1024x1024__03.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/OICC-logo-centre-1.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/LPD_logo-768x784.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/logo-blush__19.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/ac64e55a6bbe61dc1668a184a7a5de2e.jpg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/orane-logo-768x768.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/logo-1-1.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/Sonalac-Logo-q6dck6l8whngc0w7mobodckprn2ktk1lu8fuc596v4.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/Dolphin-Head-Hunters.webp",
-    "https://creativemonk.in/wp-content/uploads/2023/11/Nikunj-logo-768x768.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/white-wolf-black-logo-768x768.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/kalatri-black-logo-768x768.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/orane-logo-768x768.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/images.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/hawk-logo-latest-png-768x164.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/YWLC-logo-768x310.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/Untitled-1.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/binny-kitchen.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/original-logo-1-1-768x768.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/logo-2-1.png",
+    fc1,
+    fc2,
+    fc3,
+    fc4,
+    fc5,
+    fc6,
+    fc7,
+    fc8,
+    fc9,
+    fc10,
+    fc11,
+    fc12,
+    fc13,
+    fc14,
+    fc15,
+    fc16,
+    fc17,
+    fc18,
+    fc19,
+    fc20,
+    fc21,
+    fc22,
+    fc23,
+    fc24,
+    fc25,
+    fc26,
   ];
   let items2 = [
     {
@@ -171,64 +253,64 @@ let Body = () => {
     },
   ];
   let socialPortfolio = [
-    "https://creativemonk.in/wp-content/uploads/2023/11/ad-creative-ascure-768x768.jpg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/BK-POST-29-AUG-1024x1024-1-768x768.jpg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/Bk-post-16-sep-1024x1024-1-768x768.jpg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/Pankaj-21-nov_03-768x768.jpg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/Pankaj-21-nov_02-768x768.jpg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/Pankaj-21-nov_01-768x768.jpg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/Tandoori-Tikka-Shri-Gannu-Ji-01-768x768.jpg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/17-Gannu-Ji-TRIO-01-768x768.jpg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/Baked-Pasta-Binnys-Kitchen-768x768.jpg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/07-Binnys-Kitchen-CHILLI-TOASTiES-768x768.jpg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/06-Binnys-Kitchen-Veg-Roll-768x768.jpg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/16-Gannu-Ji-Combo-01-768x768.jpg",
+    social1,
+    social2,
+    social3,
+    social4,
+    social5,
+    social6,
+    social7,
+    social8,
+    social9,
+    social10,
+    social11,
+    social12,
   ];
   let webPortfolio = [
-    "https://creativemonk.in/wp-content/uploads/2023/11/WhatsApp-Image-2021-11-19-at-12.01.14-PM-768x378.jpeg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/WhatsApp-Image-2021-11-19-at-11.58.28-AM-768x378.jpeg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/WhatsApp-Image-2021-11-19-at-11.34.20-AM-768x355.jpeg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/agelock-skin-clinic-768x391.jpg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/cii-agro-tech-india--768x389.jpg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/WhatsApp-Image-2021-11-19-at-11.52.18-AM-768x378.jpeg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/WhatsApp-Image-2021-11-19-at-12.23.29-PM-1-768x378.jpeg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/WhatsApp-Image-2021-11-19-at-12.35.10-PM-768x378.jpeg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/WhatsApp-Image-2021-11-19-at-11.34.20-AM-4-768x378.jpeg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/orane-web-site--768x392.jpg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/360itsolutions-co-in-1024x768desktop-10527c-768x576.jpg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/cm2-768x368.jpg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/3cheerzzzzevents-com-1024x768desktop-e9d9f7-768x576.jpg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/dewguard-com-1024x768desktop-a32428-768x576.jpg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/eipssalon-com-1024x768desktop-56f468-768x576.jpg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/starfireservice-com-1024x768desktop-1463aa-768x576.jpg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/solution4u-co-in-1024x768desktop-7b8e15-768x576.jpg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/Untitled-1-768x354.jpg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/snapshot-768x394.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/snapshot-5-768x395.png",
+    web1,
+    web2,
+    web3,
+    web4,
+    web5,
+    web6,
+    web7,
+    web8,
+    web9,
+    web10,
+    web11,
+    web12,
+    web13,
+    web14,
+    web15,
+    web16,
+    web17,
+    web18,
+    web19,
+    web20,
   ];
   let packagingPortfolio = [
-    "https://creativemonk.in/wp-content/uploads/2023/11/A4-Leaflet-scaled-1-768x427.jpg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/085b27b6-fd4d-4438-8ef9-b9be23cb79af-1-768x768.jpg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/YuktiHerbs-768x768.jpeg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/WhatsApp-Image-2023-04-20-at-3.13.33-PM-768x448.jpeg",
-    "https://creativemonk.in/wp-content/uploads/2023/11/PGF2-1024x585-1-768x439.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/PWF-1024x585-1-768x439.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/SGF-1024x585-1-768x439.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/Coarse-Putty-Blue-f-1024x585-1-768x439.png",
-    "https://creativemonk.in/wp-content/uploads/2023/11/combine-f-1024x585-1-768x439.png",
+    pack1,
+    pack2,
+    pack3,
+    pack4,
+    pack5,
+    pack6,
+    pack7,
+    pack8,
+    pack9,
   ];
   let uiPortfolio = [ui1, ui2, ui3];
   let logoPortfolio = [
-    "https://thecreativemonk.in/wp-content/uploads/2023/11/25-150x150-1.png",
-    "https://thecreativemonk.in/wp-content/uploads/2023/11/knight-fork.jpg",
-    "https://thecreativemonk.in/wp-content/uploads/2023/11/6-1.png",
-    "https://thecreativemonk.in/wp-content/uploads/2023/11/shutter-logo-1.png",
-    "https://thecreativemonk.in/wp-content/uploads/2023/11/17.png",
-    "https://thecreativemonk.in/wp-content/uploads/2023/11/22.png",
-    "https://thecreativemonk.in/wp-content/uploads/2023/11/23.png",
-    "https://thecreativemonk.in/wp-content/uploads/2023/10/T3.png",
-    "https://thecreativemonk.in/wp-content/uploads/2023/10/Nyska-logo.-removebg-preview.png",
-    "https://thecreativemonk.in/wp-content/uploads/2023/10/brownie_logo-1-removebg-preview.png",
+    logo1,
+    logo2,
+    logo3,
+    logo4,
+    logo5,
+    logo6,
+    logo7,
+    logo8,
+    logo9,
+    logo10,
   ];
   useEffect(() => {
     setDisplayedData(socialPortfolio);

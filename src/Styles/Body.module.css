@@ -833,7 +833,7 @@ h6 {
 }
 
 @media all and (max-width: 600px) {
-  .firstCarouselBlock{
+  .firstCarouselBlock {
     margin-left: 20px;
   }
 
@@ -965,7 +965,7 @@ h6 {
 }
 
 @media all and (max-width: 500px) {
-  .firstCarouselBlock{
+  .firstCarouselBlock {
     margin-left: 25px;
   }
 
