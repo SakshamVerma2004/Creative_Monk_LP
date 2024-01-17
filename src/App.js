@@ -9,7 +9,7 @@ import Form from "./Components/Form";
 import { useContext } from "react";
 import { AuthContext } from "./Context/AuthContextProvider";
 import MobileOptions from "./Components/MobileOptions";
-import { SpeedInsights } from "@vercel/speed-insights/react"
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   let { showForm, setShowForm } = useContext(AuthContext);
@@ -108,7 +108,7 @@ function App() {
         <Body />
         <Footer />
         <Form />
-        <MobileOptions/>
+        <MobileOptions />
       </div>
       <SpeedInsights />
     </>
