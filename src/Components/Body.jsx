@@ -94,6 +94,7 @@ import fc23 from "../Assets/fc23.png";
 import fc24 from "../Assets/fc24.png";
 import fc25 from "../Assets/fc25.png";
 import fc26 from "../Assets/fc26.png";
+import fc27 from "../Assets/fc27.png";
 
 let Body = () => {
   let [successMessage, setSuccessMessage] = useState(false);
@@ -194,32 +195,32 @@ let Body = () => {
     "Item 10",
   ];
   let firstCarouselImages = [
-    fc3,
-    fc14,
     fc18,
     fc21,
+    fc3,
+    fc14,
+    fc16,
     fc8,
     fc6,
-    fc7,
-    fc9,
-    fc10,
+    fc1,
+    fc27,
     fc11,
     fc12,
-    fc13,
-    fc15,
-    fc16,
     fc17,
     fc19,
     fc20,
-    fc22,
     fc23,
     fc24,
     fc25,
     fc26,
-    fc1,
     fc2,
     fc4,
     fc5,
+    fc7,
+    fc9,
+    fc10,
+    fc13,
+    fc15,
   ];
   let items2 = [
     {
@@ -418,7 +419,9 @@ let Body = () => {
     <>
       <div className={styles.bodyContainer}>
         <div className={styles.innerBodyContainer}>
-          <h1 className={styles.carouselHeading}>Empowering Brands Step-by-Step</h1>
+          <h1 className={styles.carouselHeading}>
+            Empowering Brands Step-by-Step
+          </h1>
           <p className={styles.carouselPara}>
             At Creative Monk, we take pride in our track record of collaborating
             with renowned brands across various industries. We've worked with a
