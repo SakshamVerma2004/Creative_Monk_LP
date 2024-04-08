@@ -13,10 +13,6 @@ img {
   margin-bottom: 100px;
 }
 
-/* .firstCarouselBlock{
-  border: 1px solid black;
-} */
-
 .firstCarouselItem {
   width: 90%;
   padding: 10px;
@@ -88,6 +84,20 @@ h5,
 h6 {
   font-family: "Tiro Devanagari Hindi", serif;
   font-size: 50px;
+}
+
+.carouselHeading {
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-size: 50px;
+  text-align: center;
+}
+
+.carouselPara {
+  width: 80%;
+  margin: auto;
+  color: #7a7a7a;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .servicesPara {
@@ -432,6 +442,15 @@ h6 {
   height: 50px;
 }
 
+.questionInputSection textarea {
+  width: 100%;
+  height: 120px;
+  margin-top: 7px;
+  padding-left: 10px;
+  padding-top: 10px;
+  border-radius: 5px;
+}
+
 .submitButton {
   width: 100%;
   height: 40px;
@@ -608,6 +627,10 @@ h6 {
 @media all and (max-width: 900px) {
   .innerBodyContainer {
     width: 700px;
+  }
+
+  .carouselHeading {
+    font-size: 30px;
   }
 
   .bestAgencySection h1 {
@@ -845,6 +868,10 @@ h6 {
     height: 150px;
   }
 
+  .carouselHeading {
+    font-size: 25px;
+  }
+
   .bestAgencySection h1 {
     font-size: 25px;
   }
@@ -965,6 +992,11 @@ h6 {
 }
 
 @media all and (max-width: 500px) {
+  .carouselPara{
+    font-size: 15px;
+    width: 100%;
+  }
+
   .firstCarouselBlock {
     margin-left: 25px;
   }
@@ -979,6 +1011,10 @@ h6 {
 
   .bestAgencySection {
     padding: 35px;
+  }
+
+  .carouselHeading {
+    font-size: 20px;
   }
 
   .bestAgencySection h1 {

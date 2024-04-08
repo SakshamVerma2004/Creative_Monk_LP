@@ -7,19 +7,11 @@ let Form = () => {
   let [name, setName] = useState("");
   let [email, setEmail] = useState("");
   let [phoneNumber, setPhoneNumber] = useState("");
-  let [businessName, setBusinessName] = useState("");
-  let [service, setService] = useState("");
   let [errorMessage, setErrorMessage] = useState(false);
   let [formDataSent, setFormDataSent] = useState(false);
   let { showForm, setShowForm } = useContext(AuthContext);
   let submitHandler = () => {
-    if (
-      !name.trim() ||
-      !email.trim() ||
-      !phoneNumber ||
-      !businessName ||
-      !service
-    ) {
+    if (!name.trim() || !email.trim() || !phoneNumber) {
       return;
     }
     fetch("https://creative-monk-lp-default-rtdb.firebaseio.com/data.json", {
@@ -31,8 +23,6 @@ let Form = () => {
         name: name,
         email: email,
         phone_number: phoneNumber,
-        business_name: businessName,
-        service_want_to_enquire: service,
         date: new Date().toDateString(),
         time_HH_MM_SS: new Date().toLocaleTimeString(),
       }),
@@ -60,60 +50,58 @@ let Form = () => {
           </div>
           <h1>Contact Now</h1>
           <p>Get the instant quotes from our sales representatives!</p>
-          <input
-            placeholder="Name"
-            required={true}
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-          <input
-            placeholder="Email"
-            required={true}
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <input
-            placeholder="Phone Number"
-            required={true}
-            value={phoneNumber}
-            onChange={(e) => setPhoneNumber(e.target.value)}
-          />
-          <input
-            placeholder="Your Business Name"
-            required={true}
-            value={businessName}
-            onChange={(e) => setBusinessName(e.target.value)}
-          />
-          {errorMessage ? (
-            <p style={{ fontSize: "13px", color: "red", textAlign: "center" }}>
-              Something Went Wrong , Please try again later.
+          <div className={styles.fieldsSection}>
+            <p>
+              Name <span className={styles.requiredMark}>*</span>
             </p>
-          ) : (
-            <select
+            <input
+              placeholder="Name"
               required={true}
-              value={service}
-              onChange={(e) => setService(e.target.value)}
-            >
-              <option value={""}>
-                Select Service You Want To Enquire Regarding
-              </option>
-              <option value={"Social Media Marketing"}>
-                Social Media Marketing
-              </option>
-              <option value={"Lead Generation"}>Lead Generation</option>
-              <option value={"SEO"}>SEO</option>
-              <option value={"Branding"}>Branding</option>
-            </select>
-          )}
-          {formDataSent ? (
-            <p
-              style={{ color: "green", textAlign: "center", fontSize: "13px" }}
-            >
-              Form Submitted Successfully.
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <p>
+              Email <span className={styles.requiredMark}>*</span>
             </p>
-          ) : (
-            <button onClick={submitHandler}>Submit</button>
-          )}
+            <input
+              placeholder="Email"
+              required={true}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            {errorMessage ? (
+              <p
+                style={{ fontSize: "13px", color: "red", textAlign: "center" }}
+              >
+                Something Went Wrong , Please try again later.
+              </p>
+            ) : (
+              <div>
+                <p>
+                  Phone Number <span className={styles.requiredMark}>*</span>
+                </p>
+                <input
+                  placeholder="Phone Number"
+                  required={true}
+                  value={phoneNumber}
+                  onChange={(e) => setPhoneNumber(e.target.value)}
+                />
+              </div>
+            )}
+            {formDataSent ? (
+              <p
+                style={{
+                  color: "green",
+                  textAlign: "center",
+                  fontSize: "13px",
+                }}
+              >
+                Form Submitted Successfully.
+              </p>
+            ) : (
+              <button onClick={submitHandler}>Submit</button>
+            )}
+          </div>
         </div>
       </div>
     </>

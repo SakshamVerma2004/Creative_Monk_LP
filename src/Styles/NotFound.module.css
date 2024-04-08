@@ -1,0 +1,40 @@
+.notFoundSection {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notFoundInnerSection {
+  width: 300px;
+  margin: auto;
+}
+
+.notFoundInnerSection h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.notFoundInnerSection p {
+  text-align: center;
+}
+
+.backToHomeBtn {
+  display: block;
+  margin: auto;
+  border-radius: 40px;
+  width: 200px;
+  background-color: black;
+  border: 1px solid black;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  color: white;
+  padding: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 17px;
+}

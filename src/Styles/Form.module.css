@@ -100,6 +100,21 @@
   margin-bottom: 30px;
 }
 
+.fieldsSection p {
+  text-align: left;
+  margin: auto;
+  width: 100%;
+  font-size: 17px;
+  color: #f86e19;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: -5px;
+}
+
+.requiredMark {
+  color: red;
+}
+
 .containerForm input {
   display: block;
   width: 100%;
@@ -129,10 +144,10 @@
   color: white;
   font-weight: 600;
   font-size: 17px;
+  margin-top: 20px;
 }
 
-
-@media all and (max-width: 500px){
+@media all and (max-width: 500px) {
   .containerForm {
     width: 300px;
     height: 470px;
@@ -149,6 +164,17 @@
     color: #7a7a7a;
     font-size: 17px;
     margin-bottom: 30px;
+  }
+
+  .fieldsSection p {
+    text-align: left;
+    margin: auto;
+    width: 100%;
+    font-size: 17px;
+    color: #f86e19;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: -5px;
   }
 
   .containerForm h1 {

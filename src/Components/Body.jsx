@@ -101,8 +101,7 @@ let Body = () => {
   let [name, setName] = useState("");
   let [email, setEmail] = useState("");
   let [phoneNumber, setPhoneNumber] = useState("");
-  let [businessName, setBusinessName] = useState("");
-  let [service, setService] = useState("Social Media Marketing");
+  let [message, setMessage] = useState("");
   let [userClicksOnWebForFirstTime, setUserClicksOnWebForFirstTime] =
     useState(false);
   let [
@@ -195,32 +194,32 @@ let Body = () => {
     "Item 10",
   ];
   let firstCarouselImages = [
-    fc1,
-    fc2,
     fc3,
-    fc4,
-    fc5,
+    fc14,
+    fc18,
+    fc21,
+    fc8,
     fc6,
     fc7,
-    fc8,
     fc9,
     fc10,
     fc11,
     fc12,
     fc13,
-    fc14,
     fc15,
     fc16,
     fc17,
-    fc18,
     fc19,
     fc20,
-    fc21,
     fc22,
     fc23,
     fc24,
     fc25,
     fc26,
+    fc1,
+    fc2,
+    fc4,
+    fc5,
   ];
   let items2 = [
     {
@@ -390,13 +389,7 @@ let Body = () => {
   }, []);
 
   let submitHandler = () => {
-    if (
-      !name.trim() ||
-      !email.trim() ||
-      !phoneNumber ||
-      !businessName ||
-      !service
-    ) {
+    if (!name.trim() || !email.trim() || !phoneNumber) {
       return;
     }
     fetch("https://creative-monk-lp-default-rtdb.firebaseio.com/data.json", {
@@ -408,8 +401,7 @@ let Body = () => {
         name: name,
         email: email,
         phone_number: phoneNumber,
-        business_name: businessName,
-        service_want_to_enquire: service,
+        message: message,
         date: new Date().toDateString(),
         time_HH_MM_SS: new Date().toLocaleTimeString(),
       }),
@@ -426,6 +418,15 @@ let Body = () => {
     <>
       <div className={styles.bodyContainer}>
         <div className={styles.innerBodyContainer}>
+          <h1 className={styles.carouselHeading}>Empowering Brands Step-by-Step</h1>
+          <p className={styles.carouselPara}>
+            At Creative Monk, we take pride in our track record of collaborating
+            with renowned brands across various industries. We've worked with a
+            diverse range of brands and helped them achieve success through our
+            tailored solutions and dedicated services. Join us and witness how
+            our committed team write the success story of your brand or
+            company step-by-step.
+          </p>
           <div className={styles.firstCarouselBlock}>
             <Carousel responsive={responsive} {...options} showThumbs={false}>
               {firstCarouselImages.map((item, index) => (
@@ -1369,7 +1370,7 @@ let Body = () => {
             <div
               className={styles.gotQuestionBackgroundImageSection}
               style={{
-                backgroundImage: `linear-gradient(rgba(252, 100, 4, 0.9), rgba(252, 100, 4, 0.9)), url(${nextLevelBackground})`,
+                backgroundImage: `linear-gradient(rgba(252, 100, 4, 1), rgba(252, 100, 4, 1)), url(${nextLevelBackground})`,
               }}
             >
               <div className={styles.gotQuestionInfoSection}>
@@ -1431,94 +1432,81 @@ let Body = () => {
                 </div>
               </div>
             </div>
-            <div className={styles.gotQuestionFormSection}>
-              <div className={styles.questionInputSection}>
-                <h3>
-                  Name <span>*</span>
-                </h3>
-                <input
-                  placeholder="Your Name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  required={true}
-                />
-              </div>
-              <div className={styles.questionInputSection}>
-                <h3>
-                  Email <span>*</span>
-                </h3>
-                <input
-                  placeholder="Your Email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required={true}
-                />
-              </div>
-              <div className={styles.questionInputSection}>
-                <h3>
-                  Phone Number <span>*</span>
-                </h3>
-                <input
-                  placeholder="Your Phone Number"
-                  value={phoneNumber}
-                  onChange={(e) => setPhoneNumber(e.target.value)}
-                  required={true}
-                />
-              </div>
-              <div className={styles.questionInputSection}>
-                <h3>
-                  Your Business Name <span>*</span>
-                </h3>
-                <input
-                  placeholder="Your Business Name"
-                  value={businessName}
-                  onChange={(e) => setBusinessName(e.target.value)}
-                />
-              </div>
-              {errorMessage ? (
-                <p
-                  style={{
-                    color: "red",
-                    textAlign: "center",
-                    fontSize: "15px",
-                  }}
-                >
-                  Something Went Wrong , Please try again later.
-                </p>
-              ) : (
+            <form>
+              <div className={styles.gotQuestionFormSection}>
                 <div className={styles.questionInputSection}>
                   <h3>
-                    Select Services You Want to Enquire Regarding <span>*</span>
+                    Name <span style={{ color: "red" }}>*</span>
                   </h3>
-                  <select
-                    value={service}
-                    onChange={(e) => setService(e.target.value)}
-                  >
-                    <option value={"Social Media Marketing"}>
-                      Social Media Marketing
-                    </option>
-                    <option value={"Lead Generation"}>Lead Generation</option>
-                    <option value={"SEO"}>SEO</option>
-                    <option value={"Branding"}>Branding</option>
-                  </select>
+                  <input
+                    placeholder="Your Name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required={true}
+                  />
                 </div>
-              )}
-              {successMessage ? (
-                <p
-                  style={{
-                    color: "green",
-                    textAlign: "center",
-                    fontSize: "15px",
-                  }}
-                >
-                  Form Submitted Successfully.
-                </p>
-              ) : (
-                <button className={styles.submitButton} onClick={submitHandler}>
-                  Submit
-                </button>
-              )}
-            </div>
+                <div className={styles.questionInputSection}>
+                  <h3>
+                    Email <span style={{ color: "red" }}>*</span>
+                  </h3>
+                  <input
+                    placeholder="Your Email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required={true}
+                  />
+                </div>
+                <div className={styles.questionInputSection}>
+                  <h3>
+                    Phone Number <span style={{ color: "red" }}>*</span>
+                  </h3>
+                  <input
+                    placeholder="Your Phone Number"
+                    value={phoneNumber}
+                    onChange={(e) => setPhoneNumber(e.target.value)}
+                    required={true}
+                  />
+                </div>
+                {errorMessage ? (
+                  <p
+                    style={{
+                      color: "red",
+                      textAlign: "center",
+                      fontSize: "15px",
+                    }}
+                  >
+                    Something Went Wrong , Please try again later.
+                  </p>
+                ) : (
+                  <div className={styles.questionInputSection}>
+                    <h3>Message</h3>
+                    <textarea
+                      placeholder="Message"
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
+                    ></textarea>
+                  </div>
+                )}
+                {successMessage ? (
+                  <p
+                    style={{
+                      color: "green",
+                      textAlign: "center",
+                      fontSize: "15px",
+                    }}
+                  >
+                    Form Submitted Successfully.
+                  </p>
+                ) : (
+                  <button
+                    className={styles.submitButton}
+                    onClick={submitHandler}
+                  >
+                    Submit
+                  </button>
+                )}
+              </div>
+            </form>
           </div>
         </div>
         <div className={styles.testimonialsSection}>
