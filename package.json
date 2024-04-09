@@ -1,5 +1,6 @@
 {
-  "name": "creative_monk_landing_page_react_app",
+  "name": "creativemonk",
+  "homepage": "https://creativemonk.in/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

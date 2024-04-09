@@ -31,6 +31,72 @@ img {
   object-fit: contain;
 }
 
+.numberCounterSection {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #e5e7fcbd;
+  margin-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerNumberCounterSection {
+  width: 1440px;
+  text-align: center;
+}
+
+.innerNumberCounterSection h1 {
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-size: 50px;
+  color: black;
+  word-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+.innerNumberCounterSection p {
+  color: #7a7a7a;
+  width: 80%;
+  margin: auto;
+}
+
+.numberCounterGridSection {
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: repeat(4, 23%);
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.numberCounterGridSection div {
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.numberCounterGridSection div img{
+  height: 60px;
+}
+
+.numberCounterGridSection div h1{
+  margin-top: 0px;
+}
+
+.numberCounterGridSection div h1 span{
+  color: #fc6404;
+}
+
+.numberCounterGridSection div p{
+  width: 100%;
+  margin-top: -25px;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+}
+
 .bestAgencySection {
   box-sizing: border-box;
   margin-bottom: 100px;
@@ -546,6 +612,10 @@ h6 {
     width: 1100px;
   }
 
+  .innerNumberCounterSection{
+    width: 1100px
+  }
+
   .ourServicesSection {
     width: 1100px;
   }
@@ -584,6 +654,10 @@ h6 {
 @media all and (max-width: 1100px) {
   .creativeMonkServicesSection {
     width: 900px;
+  }
+
+  .innerNumberCounterSection{
+    width: 900px
   }
 
   .ourServicesSection {
@@ -627,6 +701,31 @@ h6 {
 @media all and (max-width: 900px) {
   .innerBodyContainer {
     width: 700px;
+  }
+
+  .innerNumberCounterSection{
+    width: 700px
+  }
+
+  .innerNumberCounterSection h1 {
+    font-family: "Tiro Devanagari Hindi", serif;
+    font-size: 30px;
+    color: black;
+    word-spacing: 5px;
+    margin-bottom: 20px;
+  }
+
+  .innerNumberCounterSection p {
+    width: 100%;
+  }
+  
+  .numberCounterGridSection div h1{
+    margin-top: 5px;
+  }
+  
+  .numberCounterGridSection div p{
+    margin-top: -15px;
+    font-size: 16px;
   }
 
   .carouselHeading {
@@ -730,6 +829,15 @@ h6 {
 @media all and (max-width: 750px) {
   .loadingGif {
     width: 50%;
+  }
+
+  .innerNumberCounterSection{
+    width: 550px
+  }
+
+  .numberCounterGridSection {
+    grid-template-columns: repeat(2, 48%);
+    row-gap: 20px;
   }
 
   .innerBodyContainer {
@@ -864,6 +972,15 @@ h6 {
     width: 450px;
   }
 
+  .innerNumberCounterSection{
+    width: 450px
+  }
+
+  .numberCounterGridSection {
+    grid-template-columns: repeat(2, 48%);
+    row-gap: 20px;
+  }
+
   .firstCarouselItem {
     height: 150px;
   }
@@ -992,9 +1109,18 @@ h6 {
 }
 
 @media all and (max-width: 500px) {
-  .carouselPara{
+  .carouselPara {
     font-size: 15px;
     width: 100%;
+  }
+
+  .innerNumberCounterSection{
+    width: 350px
+  }
+
+  .numberCounterGridSection {
+    grid-template-columns: repeat(2, 48%);
+    row-gap: 20px;
   }
 
   .firstCarouselBlock {
@@ -1147,6 +1273,15 @@ h6 {
 @media all and (max-width: 400px) {
   .innerBodyContainer {
     width: 300px;
+  }
+
+  .innerNumberCounterSection{
+    width: 300px
+  }
+
+  .numberCounterGridSection {
+    grid-template-columns: repeat(1, 100%);
+    row-gap: 20px;
   }
 
   .firstCarouselItem {

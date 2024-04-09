@@ -89,7 +89,7 @@
   right: 0;
   z-index: 50;
   opacity: 0;
-  animation: 0.5s showHamburger linear;
+  animation: 0.5s showHamburger ease-in-out;
   animation-fill-mode: forwards;
 }
 
@@ -102,7 +102,7 @@
   right: 0;
   z-index: 50;
   opacity: 1;
-  animation: 0.5s closeHamburger linear;
+  animation: 0.5s closeHamburger ease-in-out;
   animation-fill-mode: forwards;
 }
 
@@ -136,7 +136,7 @@
   right: -350px;
   top: 0;
   z-index: 51;
-  transition: right 1s ease;
+  transition: right 1s ease-in-out;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 20px;

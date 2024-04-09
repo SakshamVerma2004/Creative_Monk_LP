@@ -9,6 +9,11 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../Context/AuthContextProvider";
 import loadingGif from "../Assets/loadingGif.webp";
 
+import ayushiGoyal from "../Assets/AyushiGoyal.jpg";
+import rohitRana from "../Assets/RohitRana.jpg";
+import manishaKhurana from "../Assets/ManishaKhurana.jpeg";
+import harishPanwar from "../Assets/HarishPanwar.jpg";
+
 import ui1 from "../Assets/ui-1.png";
 import ui2 from "../Assets/ui-2.png";
 import ui3 from "../Assets/ui-3.png";
@@ -69,15 +74,11 @@ import logo9 from "../Assets/logo-9.png";
 import logo10 from "../Assets/logo-10.png";
 
 import fc1 from "../Assets/fc1.png";
-import fc2 from "../Assets/fc2.png";
 import fc3 from "../Assets/fc3.webp";
 import fc4 from "../Assets/fc4.png";
-import fc5 from "../Assets/fc5.png";
 import fc6 from "../Assets/fc6.png";
 import fc7 from "../Assets/fc7.png";
 import fc8 from "../Assets/fc8.jpg";
-import fc9 from "../Assets/fc9.png";
-import fc10 from "../Assets/fc10.png";
 import fc11 from "../Assets/fc11.png";
 import fc12 from "../Assets/fc12.png";
 import fc13 from "../Assets/fc13.png";
@@ -87,14 +88,22 @@ import fc16 from "../Assets/fc16.png";
 import fc17 from "../Assets/fc17.png";
 import fc18 from "../Assets/fc18.png";
 import fc19 from "../Assets/fc19.png";
-import fc20 from "../Assets/fc20.png";
 import fc21 from "../Assets/fc21.png";
-import fc22 from "../Assets/fc22.png";
-import fc23 from "../Assets/fc23.png";
 import fc24 from "../Assets/fc24.png";
-import fc25 from "../Assets/fc25.png";
 import fc26 from "../Assets/fc26.png";
 import fc27 from "../Assets/fc27.png";
+import exporthouse70 from "../Assets/exportHouseLogo.webp";
+import avenryLogo from "../Assets/avenryLogo.png";
+import ayutrustLogo from "../Assets/ayutrustLogo.png";
+import coolexLogo from "../Assets/coolexLogo.png";
+import fabieLogo from "../Assets/fabieLogo.png";
+import pankajLogo from "../Assets/pankajLogo.png";
+import chandigrahFairLogo from "../Assets/chandigarhFairLogo.png";
+
+import teamMembers from "../Assets/team.png";
+import happyClients from "../Assets/happy-clients.png";
+import digitalServices from "../Assets/digital-services.png";
+import completedTask from "../Assets/completed-task.png";
 
 let Body = () => {
   let [successMessage, setSuccessMessage] = useState(false);
@@ -200,6 +209,13 @@ let Body = () => {
     fc3,
     fc14,
     fc16,
+    exporthouse70,
+    avenryLogo,
+    ayutrustLogo,
+    coolexLogo,
+    fabieLogo,
+    pankajLogo,
+    chandigrahFairLogo,
     fc8,
     fc6,
     fc1,
@@ -208,47 +224,35 @@ let Body = () => {
     fc12,
     fc17,
     fc19,
-    fc20,
-    fc23,
     fc24,
-    fc25,
     fc26,
-    fc2,
     fc4,
-    fc5,
     fc7,
-    fc9,
-    fc10,
     fc13,
-    fc15,
   ];
   let items2 = [
     {
       comment:
         "Creative Monk's digital marketing agency in Chandigarh helped us reach new heights. Their web development skills are unmatched, and their creative design transformed our online presence. They are more than just a company; they are a digital marketing powerhouse.",
-      person_image:
-        "https://creativemonk.in/wp-content/uploads/2023/11/wepik-export-20231009080856mTi9-compressed.jpg",
+      person_image: rohitRana,
       person_name: "Rohit Rana",
     },
     {
       comment:
         "I was blown away by Creative Monk's PPC services. Their PPC experts in Chandigarh optimized our campaigns, bringing in a surge of leads. They're undoubtedly a top SEO company that knows how to deliver results.",
-      person_image:
-        "https://creativemonk.in/wp-content/uploads/2023/11/wepik-export-202310090814203GgC-compressed.jpg",
+      person_image: harishPanwar,
       person_name: "Harish Panwar",
     },
     {
       comment:
         " As a business owner, finding the best digital marketing agency in Chandigarh was crucial. Creative Monk exceeded my expectations with their digital marketing services. They've mastered the art of social media marketing and helped me connect with my audience on a whole new level.",
-      person_image:
-        " https://creativemonk.in/wp-content/uploads/2023/11/indian-businesswoman-white-background-showing-screen-laptop-e1696838526505-compressed.jpg",
+      person_image: ayushiGoyal,
       person_name: " Aayushi Goyel",
     },
     {
       comment:
         "I can't thank Creative Monk enough for their exceptional SEO services in Chandigarh. Their team of SEO experts took our website from obscurity to the first page of search results. Their dedication and professionalism truly make them the best SEO company in Chandigarh! ",
-      person_image:
-        " https://creativemonk.in/wp-content/uploads/2023/11/testimonial_1.jpeg",
+      person_image: manishaKhurana,
       person_name: "Manisha Khurana ",
     },
   ];
@@ -438,6 +442,40 @@ let Body = () => {
                 </div>
               ))}
             </Carousel>
+          </div>
+        </div>
+        <div className={styles.numberCounterSection}>
+          <div className={styles.innerNumberCounterSection}>
+            <h1>Our Fun Fact</h1>
+            <p>
+              At Creative Monk, we’ve excelled as Best Digital Marketing Company
+              in India, specializing in SEO services, web development, and
+              creative design. Our proven track record as the best SEO company
+              in Chandigarh speaks to our commitment to excellence. Partner with
+              us for unmatched digital marketing success.
+            </p>
+            <div className={styles.numberCounterGridSection}>
+              <div>
+                <img src={happyClients} />
+                <h1>350<span>+</span></h1>
+                <p>Global Happy Clients</p>
+              </div>
+              <div>
+                <img src={digitalServices} />
+                <h1>10<span>+</span></h1>
+                <p>Digital Services</p>
+              </div>
+              <div>
+                <img src={completedTask} />
+                <h1>500<span>+</span></h1>
+                <p>Project Completed</p>
+              </div>
+              <div>
+                <img src={teamMembers} />
+                <h1>20<span>+</span></h1>
+                <p>Team Members</p>
+              </div>
+            </div>
           </div>
         </div>
         <div
