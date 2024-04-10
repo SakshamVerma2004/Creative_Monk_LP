@@ -414,6 +414,7 @@ let Body = () => {
       }),
     })
       .then((res) => {
+        window.location.href = "/thankyou";
         setSuccessMessage(true);
         return res.json();
       })
@@ -459,22 +460,30 @@ let Body = () => {
             <div className={styles.numberCounterGridSection}>
               <div>
                 <img src={happyClients} />
-                <h1>350<span>+</span></h1>
+                <h1>
+                  350<span>+</span>
+                </h1>
                 <p>Global Happy Clients</p>
               </div>
               <div>
                 <img src={digitalServices} />
-                <h1>10<span>+</span></h1>
+                <h1>
+                  10<span>+</span>
+                </h1>
                 <p>Digital Services</p>
               </div>
               <div>
                 <img src={completedTask} />
-                <h1>500<span>+</span></h1>
+                <h1>
+                  500<span>+</span>
+                </h1>
                 <p>Project Completed</p>
               </div>
               <div>
                 <img src={teamMembers} />
-                <h1>20<span>+</span></h1>
+                <h1>
+                  20<span>+</span>
+                </h1>
                 <p>Team Members</p>
               </div>
             </div>
@@ -885,15 +894,22 @@ let Body = () => {
           <div className={styles.ourServicesSection}>
             <h6>Our Services</h6>
             <h1>Services We Provide</h1>
-            <div className={styles.ourServicesGridSection}>
-              <div className={styles.ourServicesIndividualServiceSection}>
-                <div className={styles.ourServicesSvgSection}>
+            <div className={styles.ourServicesGridSection2}>
+              <div
+                onClick={() => setShowForm(true)}
+                style={{ cursor: "pointer" }}
+                className={`${styles.singleServiceSection} ${styles.firstService}`}
+              >
+                <div
+                  className={`${styles.svgSection} ${styles.svgInSvgService1}`}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    height="50px"
+                    height="70px"
                     viewBox="0 1 511 511.99933"
-                    width="50px"
+                    width="70px"
                     fill="#fc6404"
+                    className={styles.svg1}
                   >
                     <path d="m447.324219 317.765625c6.453125-19.917969 9.730469-40.691406 9.730469-61.859375 0-21.089844-3.253907-41.789062-9.667969-61.644531 14.105469-5.296875 26.929687-13.777344 37.578125-25.054688 18.402344-19.480469 28.113281-44.964843 27.347656-71.75-1.585938-55.300781-47.859375-98.992187-103.167969-97.4140622-26.789062.7656252-51.671875 11.9179692-70.074219 31.4023432-9.292968 9.839844-16.363281 21.210938-20.992187 33.507813-19.859375-6.410156-40.558594-9.664063-61.65625-9.664063-21.109375 0-41.824219 3.261719-61.695313 9.679688-14.332031-37.925781-51.011718-64.96875-93.894531-64.96875-55.324219 0-100.332031 45.007812-100.332031 100.328125 0 42.878906 27.046875 79.554687 64.972656 93.882813-6.421875 19.875-9.679687 40.589843-9.679687 61.695312 0 21.167969 3.277343 41.941406 9.730469 61.859375-37.953126 14.316406-65.023438 51.007813-65.023438 93.90625 0 15.101563 3.273438 29.621094 9.730469 43.152344 1.785156 3.738281 6.261719 5.324219 10 3.539062 3.734375-1.785156 5.320312-6.261719 3.539062-10-5.488281-11.5-8.269531-23.84375-8.269531-36.691406 0-47.046875 38.28125-85.324219 85.332031-85.324219 47.054688 0 85.335938 38.277344 85.335938 85.324219 0 47.050781-38.28125 85.328125-85.335938 85.328125-21.460937 0-41.972656-7.996094-57.753906-22.515625-3.050781-2.804687-7.796875-2.605469-10.597656.441406-2.804688 3.050781-2.609375 7.792969.441406 10.597657 18.558594 17.074218 42.675781 26.476562 67.910156 26.476562 42.945313 0 79.671875-27.125 93.957031-65.136719 19.847657 6.40625 40.542969 9.660157 61.632813 9.660157 21.09375 0 41.792969-3.253907 61.640625-9.65625 14.285156 38.011718 51.011719 65.132812 93.957031 65.132812 55.324219 0 100.332031-45.007812 100.332031-100.328125 0-42.898437-27.070312-79.59375-65.027343-93.90625zm-97.347657-276.023437c15.648438-16.570313 36.816407-26.054688 59.601563-26.707032.828125-.023437 1.648437-.035156 2.476563-.035156 45.929687 0 83.941406 36.683594 85.261718 82.882812.652344 22.78125-7.605468 44.453126-23.253906 61.027344-15.648438 16.570313-36.816406 26.054688-59.601562 26.707032-.828126.023437-1.652344.035156-2.476563.035156-45.929687 0-83.941406-36.683594-85.261719-82.882813-.65625-22.78125 7.605469-44.457031 23.253906-61.027343zm-36.121093 390.71875c-18.480469 6.007812-37.765625 9.0625-57.433594 9.0625-19.660156 0-38.945313-3.054688-57.425781-9.0625 1.417968-6.710938 2.171875-13.664063 2.171875-20.789063 0-55.320313-45.011719-100.324219-100.335938-100.324219-7.167969 0-14.160156.761719-20.90625 2.195313-6.058593-18.546875-9.132812-37.902344-9.132812-57.636719 0-19.671875 3.058593-38.964844 9.078125-57.464844 6.761718 1.445313 13.773437 2.210938 20.960937 2.210938 17.1875 0 34.144531-4.421875 49.046875-12.785156 3.609375-2.027344 4.894532-6.597657 2.867188-10.210938s-6.597656-4.894531-10.210938-2.867188c-12.664062 7.105469-27.085937 10.863282-41.703125 10.863282-47.054687 0-85.332031-38.277344-85.332031-85.328125 0-47.046875 38.28125-85.324219 85.332031-85.324219 47.054688 0 85.335938 38.277344 85.335938 85.328125 0 19.683594-6.863281 38.886719-19.324219 54.078125-2.628906 3.199219-2.160156 7.925781 1.042969 10.554688 3.199219 2.625 7.925781 2.160156 10.554687-1.042969 14.652344-17.863281 22.726563-40.449219 22.726563-63.59375 0-7.183594-.769531-14.195313-2.210938-20.957031 18.496094-6.019532 37.792969-9.078126 57.464844-9.078126 19.667969 0 38.957031 3.054688 57.445313 9.066407-1.636719 7.742187-2.371094 15.730469-2.140626 23.84375 1.558594 54.324219 46.246094 97.457031 100.253907 97.453125.964843 0 1.9375-.011719 2.910156-.042969 6.148437-.175781 12.195313-.90625 18.089844-2.152344 6.015625 18.492188 9.074219 37.785157 9.074219 57.449219 0 19.734375-3.078126 39.089844-9.132813 57.636719-6.746094-1.4375-13.738281-2.195313-20.902344-2.195313-55.324219 0-100.332031 45.003906-100.332031 100.324219 0 7.128906.75 14.082031 2.167969 20.789063zm98.164062 64.539062c-47.054687 0-85.332031-38.277344-85.332031-85.324219 0-47.050781 38.277344-85.328125 85.332031-85.328125 47.054688 0 85.332031 38.277344 85.332031 85.328125 0 47.046875-38.277343 85.324219-85.332031 85.324219zm0 0"></path>
                     <path d="m151.902344 56.054688c-2.585938-1.757813-5.988282-1.730469-8.542969.074218-2.554687 1.800782-5.289063 3.304688-8.164063 4.496094-10.304687-8.0625-25.238281-7.96875-35.46875.925781-5.316406 4.625-8.640624 11.019531-9.414062 17.925781-11.003906-1.636718-20.949219-7.695312-27.472656-16.984374-1.554688-2.210938-4.179688-3.410157-6.863282-3.152344-2.691406.261718-5.03125 1.949218-6.128906 4.417968-.214844.484376-5.261718 12.015626-4.617187 26.128907.492187 10.800781 4.355469 24.722656 18.445312 35.472656-5.074219 1.636719-10.433593 2.394531-15.773437 2.179687-3.476563-.136718-6.582032 2.125-7.519532 5.46875s.542969 6.894532 3.578126 8.582032c11.765624 6.535156 24.371093 9.808594 36.6875 9.808594 11.832031 0 23.394531-3.023438 33.683593-9.074219 12.902344-7.589844 22.277344-19.210938 27.367188-33.402344.160156-.359375.292969-.734375.398437-1.121094 2.617188-7.707031 3.988282-16.148437 3.988282-25.101562 0-.390625-.011719-.785157-.027344-1.175781 4.28125-5.046876 7.335937-11.027344 8.914062-17.492188.734375-3.039062-.484375-6.21875-3.070312-7.976562zm-21.046875 24.304687c.148437.78125.226562 1.589844.226562 2.363281 0 7.351563-1.09375 14.160156-3.175781 20.3125-.113281.28125-.207031.574219-.285156.875-3.894532 10.898438-10.984375 19.652344-20.894532 25.484375-9.070312 5.339844-19.480468 7.613281-30.089843 6.84375 2.429687-1.203125 4.777343-2.570312 7.023437-4.09375 2.25-1.53125 3.5-4.160156 3.257813-6.875-.242188-2.714843-1.9375-5.082031-4.425781-6.1875-14.003907-6.222656-21.492188-16.121093-22.253907-29.414062-.15625-2.722657-.019531-5.335938.273438-7.730469 10.316406 8.621094 23.53125 13.324219 37.324219 12.96875 4.066406-.105469 7.308593-3.429688 7.308593-7.496094v-4.550781c0-.03125 0-.066406 0-.101563-.050781-3.792968 1.558594-7.398437 4.425781-9.886718 5.359376-4.660156 13.507813-4.09375 18.167969 1.265625.9375 1.074219 2.132813 1.835937 3.4375 2.238281-.457031 1.257812-.578125 2.628906-.320312 3.984375zm0 0"></path>
@@ -904,33 +920,37 @@ let Body = () => {
                     <path d="m310.703125 178.09375c-4.144531 0-7.5 3.359375-7.5 7.5v3.363281c-10.570313 6.230469-21.683594 11.609375-33.109375 16.011719-9.148438 3.523438-18.597656 6.453125-28.15625 8.746094-1.46875-1.128906-3.296875-1.8125-5.289062-1.8125h-34.339844c-8.296875 0-15.042969 6.75-15.042969 15.042968v39.386719c0 8.296875 6.746094 15.042969 15.042969 15.042969h6.863281l2.601563 50.007812c.207031 4.003907 3.519531 7.109376 7.484374 7.109376.128907 0 .261719-.003907.394532-.011719 4.136718-.214844 7.316406-3.742188 7.101562-7.878907l-2.5625-49.226562h12.457032c1.988281 0 3.820312-.679688 5.285156-1.808594 6.085937 1.46875 12.140625 3.195313 18.058594 5.160156 3.933593 1.300782 8.175781-.828124 9.480468-4.757812 1.304688-3.933594-.828125-8.179688-4.757812-9.480469-6.355469-2.109375-12.855469-3.964843-19.394532-5.539062v-36.613281c10.242188-2.453126 20.363282-5.597657 30.164063-9.371094 9.476563-3.652344 18.757813-7.929688 27.714844-12.773438v80.914063c-3.296875-1.78125-6.628907-3.480469-9.984375-5.09375-3.734375-1.796875-8.214844-.226563-10.007813 3.507812-1.796875 3.734375-.226562 8.214844 3.507813 10.011719 5.585937 2.6875 11.109375 5.648438 16.484375 8.804688v3.347656c0 4.144531 3.359375 7.5 7.5 7.5s7.5-3.355469 7.5-7.5v-122.089844c.003906-4.140625-3.355469-7.5-7.496094-7.5zm-80.378906 88.277344-28.058594-.039063.042969-39.429687h28.015625zm0 0"></path>
                   </svg>
                 </div>
-                <h2>Social Media Marketing</h2>
-                <p>
-                  Immerse your brand in the vibrant world of social media with
-                  our tailored marketing strategies. From compelling content
-                  creation to strategic campaign management, we navigate the
-                  dynamic landscape to enhance your brand's visibility and
-                  engagement. Our approach goes beyond likes and shares; we
-                  build communities and foster genuine connections, transforming
-                  online presence into a powerful catalyst for growth..
-                </p>
-                <button
-                  className={styles.enquiryBtn}
-                  onClick={() => setShowForm(true)}
-                >
-                  Enquiry Now
-                </button>
+                <div className={styles.firstDotPoint}></div>
+                <div className={styles.firstDottedLine}></div>
+                <div className={styles.secondDottedLine}></div>
+                <div className={styles.secondDotPoint}></div>
+                <div className={styles.service1TextSection}>
+                  <h2>Social Media Marketing</h2>
+                  <p>
+                    Boost your brand on social media with our tailored
+                    strategies. We create compelling content, manage campaigns,
+                    and enhance visibility. We build communities, fostering
+                    genuine connections for growth.
+                  </p>
+                </div>
               </div>
-              <div className={styles.ourServicesIndividualServiceSection}>
-                <div className={styles.ourServicesSvgSection}>
+              <div
+                onClick={() => setShowForm(true)}
+                style={{ cursor: "pointer" }}
+                className={`${styles.singleServiceSection} ${styles.secondService}`}
+              >
+                <div
+                  className={`${styles.svgSection} ${styles.svgInSvgService1}`}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xlink="http://www.w3.org/1999/xlink"
                     x="0px"
                     y="0px"
                     viewBox="0 0 512 512"
-                    width="50px"
+                    width="70px"
                     fill="#fc6404"
+                    className={styles.svg1}
                   >
                     <g>
                       {" "}
@@ -1005,76 +1025,38 @@ let Body = () => {
                     <g></g>
                   </svg>
                 </div>
-                <h2>Lead Generation</h2>
-                <p>
-                  Unlock the full potential of your business with our targeted
-                  lead generation services. We employ sophisticated techniques
-                  to identify and capture high-quality leads, ensuring that your
-                  sales funnel is consistently fueled with promising
-                  opportunities. Through meticulous analysis and personalized
-                  outreach, we convert prospects into loyal customers, driving
-                  sustained business growth and maximizing your return on
-                  investment.
-                </p>
-                <button
-                  className={styles.enquiryBtn}
-                  onClick={() => setShowForm(true)}
-                >
-                  Enquiry Now
-                </button>
-              </div>
-              <div className={styles.ourServicesIndividualServiceSection}>
-                <div className={styles.ourServicesSvgSection}>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 64 64"
-                    width="50"
-                    fill="#fc6404"
-                  >
-                    <g>
-                      <path d="m24 13.023h-2c-.552 0-1-.449-1-1h-2c0 1.654 1.346 3 3 3h2c1.654 0 3-1.346 3-3s-1.346-3-3-3h-2c-.552 0-1-.449-1-1s.448-1 1-1h2c.552 0 1 .449 1 1h2c0-1.654-1.346-3-3-3h-2c-1.654 0-3 1.346-3 3s1.346 3 3 3h2c.552 0 1 .449 1 1s-.448 1-1 1z"></path>
-                      <path d="m32 15.023h3v-2h-3c-.552 0-1-.449-1-1v-1h4v-2h-4v-1c0-.551.448-1 1-1h3v-2h-3c-1.654 0-3 1.346-3 3v4c0 1.654 1.346 3 3 3z"></path>
-                      <path d="m40 15.023h2c1.654 0 3-1.346 3-3v-4c0-1.654-1.346-3-3-3h-2c-1.654 0-3 1.346-3 3v4c0 1.654 1.346 3 3 3zm-1-7c0-.551.448-1 1-1h2c.552 0 1 .449 1 1v4c0 .551-.448 1-1 1h-2c-.552 0-1-.449-1-1z"></path>
-                      <path d="m63 23h-4v-3c0-2.757-2.243-5-5-5h-5v-10.977c0-1.654-1.346-3-3-3h-28c-1.654 0-3 1.346-3 3v10.977h-5c-2.757 0-5 2.243-5 5v6.082c-2.387 1.386-4 3.965-4 6.918s1.613 5.532 4 6.918v8.082c0 2.757 2.243 5 5 5h12v4h-1c-2.757 0-5 2.243-5 5v1h32v-1c0-2.757-2.243-5-5-5h-1v-4h12c2.757 0 5-2.243 5-5v-7h4zm-46-18.977c0-.551.448-1 1-1h28c.552 0 1 .449 1 1v12c0 .551-.448 1-1 1h-10.302l-5.865 3.888c-.333.224-.833-.046-.833-.448v-3.44h-11c-.552 0-1-.449-1-1zm-10 15.977c0-1.654 1.346-3 3-3h5.177c.408 1.173 1.512 2.023 2.823 2.023h9v1.44c0 1.399 1.138 2.537 2.537 2.537.5 0 .984-.146 1.401-.422l5.363-3.555h9.699c1.31 0 2.415-.85 2.823-2.023h5.177c1.654 0 3 1.346 3 3v3h-8v9h-6v-5h-6v12h-2v-14h-6v14h-2v-10h-6v3h-4.069c-.495-3.94-3.859-7-7.931-7-.692 0-1.359.097-2 .263zm32 19v-10h2v10zm-6 0h-2v-12h2zm-8 0h-2v-8h2zm-22-6c0-3.309 2.691-6 6-6s6 2.691 6 6-2.691 6-6 6-6-2.691-6-6zm42.829 28h-27.658c.413-1.164 1.525-2 2.829-2h22c1.304 0 2.416.836 2.829 2zm-5.829-4h-16v-4h16zm14-6h-44c-1.654 0-3-1.346-3-3v-3h50v3c0 1.654-1.346 3-3 3zm3-8h-50v-2.263c.641.166 1.308.263 2 .263 4.072 0 7.436-3.06 7.931-7h4.069v5h-2v2h26v-2h-2v-5h6v7h8zm4-4h-10v-14h10z"></path>
-                      <circle cx="28" cy="48" r="1"></circle>
-                      <circle cx="32" cy="48" r="1"></circle>
-                      <circle cx="36" cy="48" r="1"></circle>
-                      <path d="m13 33c0-2.206-1.794-4-4-4s-4 1.794-4 4 1.794 4 4 4 4-1.794 4-4zm-6 0c0-1.103.897-2 2-2s2 .897 2 2-.897 2-2 2-2-.897-2-2z"></path>
-                      <path d="m53 27h6v2h-6z"></path>
-                      <path d="m53 31h6v2h-6z"></path>
-                      <path d="m53 35h6v2h-6z"></path>
-                    </g>
-                  </svg>
+                <div className={styles.firstDotPointSecondService}></div>
+                <div className={styles.firstDottedLineSecondService}></div>
+                <div className={styles.secondDottedLineSecondService}></div>
+                <div className={styles.secondDotPointSecondService}></div>
+                <div className={styles.service2TextSection}>
+                  <h2>Lead Generation</h2>
+                  <p>
+                    Unlock your business potential with our targeted lead
+                    generation services. We identify high-quality leads, boosts
+                    your sales possibilities, and maximize ROI for sustained
+                    growth and success.
+                  </p>
                 </div>
-                <h2>SEO</h2>
-                <p>
-                  Propel your brand to the forefront of online discovery with
-                  our expert SEO strategies. We meticulously optimize your
-                  digital assets to align with search engine algorithms,
-                  ensuring top-ranking visibility. From keyword optimization to
-                  technical enhancements, our approach is comprehensive. The
-                  result is not just increased traffic but a sustainable and
-                  robust online presence that stands the test of evolving search
-                  engine dynamics.
-                </p>
-                <button
-                  className={styles.enquiryBtn}
-                  onClick={() => setShowForm(true)}
-                >
-                  Enquiry Now
-                </button>
               </div>
-              <div className={styles.ourServicesIndividualServiceSection}>
-                <div className={styles.ourServicesSvgSection}>
+              <div
+                onClick={() => setShowForm(true)}
+                style={{ cursor: "pointer" }}
+                className={`${styles.singleServiceSection} ${styles.thirdService}`}
+              >
+                <div
+                  className={`${styles.svgSection} ${styles.svgInSvgService1} ${styles.svgInSvgService3}`}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xlink="http://www.w3.org/1999/xlink"
-                    width="50px"
-                    height="50px"
+                    width="70px"
+                    height="70px"
                     x="0"
                     y="0"
                     viewBox="0 0 512 512"
                     fill="#FFFFFF"
+                    className={styles.svg1}
                   >
                     <g>
                       <path
@@ -1273,23 +1255,64 @@ let Body = () => {
                     </g>
                   </svg>
                 </div>
-                <h2>Branding</h2>
-                <p>
-                  Craft an indelible brand identity that resonates with your
-                  audience through our strategic branding services. We go beyond
-                  logos and visuals, delving into the core values that define
-                  your business. Our creative team orchestrates a symphony of
-                  visual elements and compelling narratives, creating a brand
-                  persona that captivates hearts and minds. Elevate your brand
-                  from a mere product or service to a distinctive and memorable
-                  presence in your industry.
-                </p>
-                <button
-                  className={styles.enquiryBtn}
+                <div className={styles.firstDotPointThirdService}></div>
+                <div className={styles.firstDottedLineThirdService}></div>
+                <div className={styles.secondDottedLineThirdService}></div>
+                <div className={styles.secondDotPointThirdService}></div>
+                <div className={styles.service3TextSection}>
+                  <h2>Branding</h2>
+                  <p>
+                    Create a memorable brand identity with our strategic
+                    branding services. We focus on your core values,crafting a
+                    visibly eye-catching brand that resonates with your audience
+                    and substantially elevates your presence in the industry.
+                  </p>
+                </div>
+              </div>
+              <div
+                onClick={() => setShowForm(true)}
+                style={{ cursor: "pointer" }}
+                className={`${styles.singleServiceSection} ${styles.fourthService}`}
+              >
+                <div
+                  className={`${styles.svgSection} ${styles.svgInSvgService1} ${styles.svgInSvgService3}`}
                   onClick={() => setShowForm(true)}
                 >
-                  Enquiry Now
-                </button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 64 64"
+                    width="70px"
+                    fill="#fc6404"
+                    className={styles.svg1}
+                  >
+                    <g>
+                      <path d="m24 13.023h-2c-.552 0-1-.449-1-1h-2c0 1.654 1.346 3 3 3h2c1.654 0 3-1.346 3-3s-1.346-3-3-3h-2c-.552 0-1-.449-1-1s.448-1 1-1h2c.552 0 1 .449 1 1h2c0-1.654-1.346-3-3-3h-2c-1.654 0-3 1.346-3 3s1.346 3 3 3h2c.552 0 1 .449 1 1s-.448 1-1 1z"></path>
+                      <path d="m32 15.023h3v-2h-3c-.552 0-1-.449-1-1v-1h4v-2h-4v-1c0-.551.448-1 1-1h3v-2h-3c-1.654 0-3 1.346-3 3v4c0 1.654 1.346 3 3 3z"></path>
+                      <path d="m40 15.023h2c1.654 0 3-1.346 3-3v-4c0-1.654-1.346-3-3-3h-2c-1.654 0-3 1.346-3 3v4c0 1.654 1.346 3 3 3zm-1-7c0-.551.448-1 1-1h2c.552 0 1 .449 1 1v4c0 .551-.448 1-1 1h-2c-.552 0-1-.449-1-1z"></path>
+                      <path d="m63 23h-4v-3c0-2.757-2.243-5-5-5h-5v-10.977c0-1.654-1.346-3-3-3h-28c-1.654 0-3 1.346-3 3v10.977h-5c-2.757 0-5 2.243-5 5v6.082c-2.387 1.386-4 3.965-4 6.918s1.613 5.532 4 6.918v8.082c0 2.757 2.243 5 5 5h12v4h-1c-2.757 0-5 2.243-5 5v1h32v-1c0-2.757-2.243-5-5-5h-1v-4h12c2.757 0 5-2.243 5-5v-7h4zm-46-18.977c0-.551.448-1 1-1h28c.552 0 1 .449 1 1v12c0 .551-.448 1-1 1h-10.302l-5.865 3.888c-.333.224-.833-.046-.833-.448v-3.44h-11c-.552 0-1-.449-1-1zm-10 15.977c0-1.654 1.346-3 3-3h5.177c.408 1.173 1.512 2.023 2.823 2.023h9v1.44c0 1.399 1.138 2.537 2.537 2.537.5 0 .984-.146 1.401-.422l5.363-3.555h9.699c1.31 0 2.415-.85 2.823-2.023h5.177c1.654 0 3 1.346 3 3v3h-8v9h-6v-5h-6v12h-2v-14h-6v14h-2v-10h-6v3h-4.069c-.495-3.94-3.859-7-7.931-7-.692 0-1.359.097-2 .263zm32 19v-10h2v10zm-6 0h-2v-12h2zm-8 0h-2v-8h2zm-22-6c0-3.309 2.691-6 6-6s6 2.691 6 6-2.691 6-6 6-6-2.691-6-6zm42.829 28h-27.658c.413-1.164 1.525-2 2.829-2h22c1.304 0 2.416.836 2.829 2zm-5.829-4h-16v-4h16zm14-6h-44c-1.654 0-3-1.346-3-3v-3h50v3c0 1.654-1.346 3-3 3zm3-8h-50v-2.263c.641.166 1.308.263 2 .263 4.072 0 7.436-3.06 7.931-7h4.069v5h-2v2h26v-2h-2v-5h6v7h8zm4-4h-10v-14h10z"></path>
+                      <circle cx="28" cy="48" r="1"></circle>
+                      <circle cx="32" cy="48" r="1"></circle>
+                      <circle cx="36" cy="48" r="1"></circle>
+                      <path d="m13 33c0-2.206-1.794-4-4-4s-4 1.794-4 4 1.794 4 4 4 4-1.794 4-4zm-6 0c0-1.103.897-2 2-2s2 .897 2 2-.897 2-2 2-2-.897-2-2z"></path>
+                      <path d="m53 27h6v2h-6z"></path>
+                      <path d="m53 31h6v2h-6z"></path>
+                      <path d="m53 35h6v2h-6z"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div className={styles.firstDotPointFourthService}></div>
+                <div className={styles.firstDottedLineFourthService}></div>
+                <div className={styles.secondDottedLineFourthService}></div>
+                <div className={styles.secondDotPointFourthService}></div>
+                <div className={styles.service4TextSection}>
+                  <h2>SEO</h2>
+                  <p>
+                    Boost your online discovery with our expert SEO strategies.
+                    We optimize digital assets for top-ranking visibility,
+                    ensuring sustainable online presence amidst ever changing
+                    SEO dynamics.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

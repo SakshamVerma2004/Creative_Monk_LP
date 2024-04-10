@@ -8,8 +8,9 @@
   padding-right: 20px;
   position: fixed;
   z-index: 90;
-  top: 85vh;
+  top: auto;
   left: 0;
+  bottom: 15vh;
   display: none;
 }
 

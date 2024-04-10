@@ -30,6 +30,7 @@ let Footer = () => {
     )
       .then((res) => {
         setSuccessMessage(true);
+        window.location.href="/thankyou";
         return res.json();
       })
       .catch((err) => {

@@ -269,58 +269,284 @@ h6 {
   font-size: 50px;
 }
 
-.ourServicesGridSection {
-  width: 70%;
-  margin: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  display: grid;
-  grid-template-columns: repeat(2, 49%);
-  justify-content: space-between;
-  row-gap: 20px;
-}
-
-.ourServicesIndividualServiceSection {
-  width: 100%;
-  border-radius: 5px;
-  border: 2px solid white;
-  box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 10px;
-  position: relative;
-  padding: 20px;
-  padding-top: 30px;
-  box-sizing: border-box;
-  background-color: #fc6404;
-}
-
-.ourServicesSvgSection {
-  width: 100px;
-  height: 100px;
-  margin: auto;
-  background-color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .ourServicesIndividualServiceSection h2 {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 35px;
 }
 
-.enquiryBtn {
-  margin-top: 30px;
-  margin-bottom: 20px;
-  color: #fc6404;
+.ourServicesGridSection2{
+  width: 100%;
+  position: relative;
+  padding-bottom: 350px;
+}
+
+.singleServiceSection{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.firstService{
+  width: 550px;
+  margin: auto;
+  position: relative;
+  left: 14%;
+}
+
+.secondService{
+  width: 550px;
+  margin: auto;
+  position: relative;
+  left: 22%;
+  margin-top: -40px;
+}
+
+.thirdService{
+  width: 550px;
+  margin: auto;
+  position: relative;
+  left: 14%;
+  margin-top: -40px;
+}
+
+.fourthService{
+  width: 550px;
+  margin: auto;
+  position: relative;
+  left: 6%;
+  margin-top: -280px;
+}
+
+.svgSection{
+  width: 160px;
+  height: 160px;
   background-color: white;
-  border: 1px solid #fc6404;
-  font-size: 17px;
-  height: 50px;
-  border-radius: 5px;
-  padding-left: 25px;
-  padding-right: 25px;
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.svgInSvgService1{
+  transform: rotate(45deg);
+}
+
+.svg1{
+  transform: rotate(-45deg);
+}
+
+.firstDotPoint{
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 27%;
+  top: 20%;
+}
+
+.firstDotPointSecondService{
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 22%;
+  top: 85%;
+}
+
+.firstDotPointThirdService{
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 4%;
+  top: 85%;
+}
+
+.firstDotPointFourthService{
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 1%;
+  top: 11%;
+}
+
+.firstDottedLine{
+  width: 40px;
+  border: 1px dashed white;
+  position: absolute;
+  left: 29%;
+  top: 15%;
+  transform: rotate(-43deg);
+}
+
+.firstDottedLineSecondService{
+  width: 40px;
+  border: 1px dashed white;
+  position: absolute;
+  left: 23%;
+  top: 100%;
+  transform: rotate(43deg);
+}
+
+.firstDottedLineThirdService{
+  width: 40px;
+  border: 1px dashed white;
+  position: absolute;
+  left: 0%;
+  top: 99%;
+  transform: rotate(-43deg);
+}
+
+.firstDottedLineFourthService{
+  width: 40px;
+  border: 1px dashed white;
+  position: absolute;
+  left: -3%;
+  top: 9%;
+  transform: rotate(43deg);
+}
+
+.secondDottedLine{
+  width: 100px;
+  border: 1px dashed white;
+  position: absolute;
+  left: 36%;
+  top: 6%;
+}
+
+.secondDottedLineSecondService{
+  width: 100px;
+  border: 1px dashed white;
+  position: absolute;
+  left: 30%;
+  top: 109%;
+}
+
+.secondDottedLineThirdService{
+  width: 100px;
+  border: 1px dashed white;
+  position: absolute;
+  left: -18%;
+  top: 109%;
+}
+
+.secondDottedLineFourthService{
+  width: 100px;
+  border: 1px dashed white;
+  position: absolute;
+  left: -21%;
+  top: 1%;
+}
+
+.secondDotPoint{
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 54.7%;
+  top: 1%;
+}
+
+.secondDotPointSecondService{
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 49%;
+  top: 103%;
+}
+
+.secondDotPointThirdService{
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: -22%;
+  top: 103%;
+}
+
+.secondDotPointFourthService{
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: -25%;
+  top: -5%;
+}
+
+.service1TextSection{
+  text-align: left;
+  position: absolute;
+  width: 50%;
+  top: 10%;
+  left: 60%;
+}
+
+.service1TextSection h2{
+  font-size: 25px;
+}
+
+.service1TextSection p{
+  margin-top: -20px;
+}
+
+.service2TextSection{
+  text-align: left;
+  position: absolute;
+  width: 50%;
+  top: 110%;
+  left: 40%;
+}
+
+.service2TextSection h2{
+  font-size: 25px;
+}
+
+.service2TextSection p{
+  margin-top: -20px;
+}
+
+.service3TextSection{
+  text-align: right;
+  position: absolute;
+  width: 50%;
+  top: 115%;
+  left: -44%;
+}
+
+.service3TextSection h2{
+  font-size: 25px;
+}
+
+.service3TextSection p{
+  margin-top: -20px;
+}
+
+.service4TextSection{
+  text-align: right;
+  position: absolute;
+  width: 50%;
+  top: 10%;
+  left: -64%;
+}
+
+.service4TextSection h2{
+  font-size: 25px;
+}
+
+.service4TextSection p{
+  margin-top: -20px;
 }
 
 .ourPortfolioSection {
@@ -652,6 +878,37 @@ h6 {
   .ourServicesGridSection{
     width: 90%;
   }
+
+  .firstService{
+    width: 550px;
+    margin: auto;
+    position: relative;
+    left: 17%;
+  }
+  
+  .secondService{
+    width: 550px;
+    margin: auto;
+    position: relative;
+    left: 27%;
+    margin-top: -30px;
+  }
+  
+  .thirdService{
+    width: 550px;
+    margin: auto;
+    position: relative;
+    left: 17%;
+    margin-top: -30px;
+  }
+  
+  .fourthService{
+    width: 550px;
+    margin: auto;
+    position: relative;
+    left: 7%;
+    margin-top: -290px;
+  }
 }
 
 @media all and (max-width: 1100px) {
@@ -702,6 +959,300 @@ h6 {
 
   .ourServicesGridSection{
     width: 100%;
+  }
+
+  .firstService{
+    width: 550px;
+    margin: auto;
+    position: relative;
+    left: 1%;
+  }
+  
+  .secondService{
+    width: 550px;
+    margin: auto;
+    position: relative;
+    left: 1%;
+    margin-top: 70px;
+  }
+  
+  .thirdService{
+    width: 550px;
+    margin: auto;
+    position: relative;
+    left: 50%;
+    margin-top: 120px;
+  }
+  
+  .fourthService{
+    width: 550px;
+    margin: auto;
+    position: relative;
+    left: 50%;
+    margin-top: 120px;
+  }
+
+  .ourServicesGridSection2{
+    padding-bottom: 100px;
+  }
+
+  .svgSection{
+    width: 160px;
+    height: 160px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+  }
+  
+  .svgInSvgService1{
+    transform: rotate(45deg);
+  }
+  
+  .svg1{
+    transform: rotate(-45deg);
+  }
+  
+  .firstDotPoint{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 27%;
+    top: 20%;
+    display: none
+  }
+  
+  .firstDotPointSecondService{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 22%;
+    top: 85%;
+    display: none
+  }
+  
+  .firstDotPointThirdService{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 4%;
+    top: 85%;
+    display: none
+  }
+  
+  .firstDotPointFourthService{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 1%;
+    top: 11%;
+    display: none
+  }
+  
+  .firstDottedLine{
+    width: 40px;
+    border: 1px dashed white;
+    position: absolute;
+    left: 29%;
+    top: 15%;
+    transform: rotate(-43deg);
+    display: none
+  }
+  
+  .firstDottedLineSecondService{
+    width: 40px;
+    border: 1px dashed white;
+    position: absolute;
+    left: 23%;
+    top: 100%;
+    transform: rotate(43deg);
+    display: none
+  }
+  
+  .firstDottedLineThirdService{
+    width: 40px;
+    border: 1px dashed white;
+    position: absolute;
+    left: 0%;
+    top: 99%;
+    transform: rotate(-43deg);
+    display: none
+  }
+  
+  .firstDottedLineFourthService{
+    width: 40px;
+    border: 1px dashed white;
+    position: absolute;
+    left: -3%;
+    top: 9%;
+    transform: rotate(43deg);
+    display: none
+  }
+  
+  .secondDottedLine{
+    width: 100px;
+    border: 1px dashed white;
+    position: absolute;
+    left: 36%;
+    top: 6%;
+    display: none
+  }
+  
+  .secondDottedLineSecondService{
+    width: 100px;
+    border: 1px dashed white;
+    position: absolute;
+    left: 30%;
+    top: 109%;
+    display: none
+  }
+  
+  .secondDottedLineThirdService{
+    width: 100px;
+    border: 1px dashed white;
+    position: absolute;
+    left: -18%;
+    top: 109%;
+    display: none
+  }
+  
+  .secondDottedLineFourthService{
+    width: 100px;
+    border: 1px dashed white;
+    position: absolute;
+    left: -21%;
+    top: 1%;
+    display: none
+  }
+  
+  .secondDotPoint{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 54.7%;
+    top: 1%;
+    display: none
+  }
+  
+  .secondDotPointSecondService{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 49%;
+    top: 103%;
+    display: none
+  }
+  
+  .secondDotPointThirdService{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: -22%;
+    top: 103%;
+    display: none
+  }
+  
+  .secondDotPointFourthService{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: -25%;
+    top: -5%;
+    display: none
+  }
+  
+  .service1TextSection{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    top: -10%;
+    left: 0%;
+  }
+  
+  .service1TextSection h2{
+    font-size: 25px;
+  }
+  
+  .service1TextSection p{
+    margin-top: -20px;
+  }
+  
+  .service2TextSection{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    top: -10%;
+    left: 0%;
+  }
+  
+  .service2TextSection h2{
+    font-size: 25px;
+  }
+  
+  .service2TextSection p{
+    margin-top: -20px;
+  }
+  
+  .service3TextSection{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    top: -10%;
+    left: -80%;
+  }
+  
+  .service3TextSection h2{
+    font-size: 25px;
+  }
+  
+  .service3TextSection p{
+    margin-top: -20px;
+  }
+  
+  .service4TextSection{
+    text-align: center;
+    position: relative;
+    width: 100%;
+    top: -10%;
+    left: -80%;
+  }
+  
+  .service4TextSection h2{
+    font-size: 25px;
+  }
+  
+  .service4TextSection p{
+    margin-top: -20px;
+  }
+
+  .svgInSvgService3{
+    margin-left: -160%;
+  }
+
+  .singleServiceSection{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 50px;
   }
 }
 
@@ -831,9 +1382,40 @@ h6 {
   .gotQuestionSection {
     width: 700px;
   }
+
+  .thirdService{
+    width: 550px;
+    margin: auto;
+    position: relative;
+    left: 64%;
+    margin-top: 120px;
+  }
+  
+  .fourthService{
+    width: 550px;
+    margin: auto;
+    position: relative;
+    left: 64%;
+    margin-top: 120px;
+  }
 }
 
 @media all and (max-width: 750px) {
+  .thirdService{
+    width: 550px;
+    margin: auto;
+    position: relative;
+    left: 82%;
+    margin-top: 120px;
+  }
+  
+  .fourthService{
+    width: 550px;
+    margin: auto;
+    position: relative;
+    left: 82%;
+    margin-top: 120px;
+  }
   .loadingGif {
     width: 50%;
   }
@@ -971,6 +1553,37 @@ h6 {
 }
 
 @media all and (max-width: 600px) {
+  .firstService{
+    width: 400px;
+    margin: auto;
+    position: relative;
+    left: 1%;
+    margin-top: 50px;
+  }
+  
+  .secondService{
+    width: 400px;
+    margin: auto;
+    position: relative;
+    left: 1%;
+    margin-top: 70px;
+  }
+  
+  .thirdService{
+    width: 400px;
+    margin: auto;
+    position: relative;
+    left: 73%;
+    margin-top: 80px;
+  }
+  
+  .fourthService{
+    width: 400px;
+    margin: auto;
+    position: relative;
+    left: 73%;
+    margin-top: 80px;
+  }
   .firstCarouselBlock {
     margin-left: 20px;
   }
@@ -1116,6 +1729,37 @@ h6 {
 }
 
 @media all and (max-width: 500px) {
+  .firstService{
+    width: 350px;
+    margin: auto;
+    position: relative;
+    left: 1%;
+    margin-top: 50px;
+  }
+  
+  .secondService{
+    width: 350px;
+    margin: auto;
+    position: relative;
+    left: 1%;
+    margin-top: 70px;
+  }
+  
+  .thirdService{
+    width: 350px;
+    margin: auto;
+    position: relative;
+    left: 80%;
+    margin-top: 80px;
+  }
+  
+  .fourthService{
+    width: 350px;
+    margin: auto;
+    position: relative;
+    left: 80%;
+    margin-top: 80px;
+  }
   .carouselPara {
     font-size: 15px;
     width: 100%;
@@ -1282,6 +1926,37 @@ h6 {
 }
 
 @media all and (max-width: 400px) {
+  .firstService{
+    width: 300px;
+    margin: auto;
+    position: relative;
+    left: 1%;
+    margin-top: 50px;
+  }
+  
+  .secondService{
+    width: 300px;
+    margin: auto;
+    position: relative;
+    left: 1%;
+    margin-top: 70px;
+  }
+  
+  .thirdService{
+    width: 300px;
+    margin: auto;
+    position: relative;
+    left: 80%;
+    margin-top: 80px;
+  }
+  
+  .fourthService{
+    width: 300px;
+    margin: auto;
+    position: relative;
+    left: 80%;
+    margin-top: 80px;
+  }
   .innerBodyContainer {
     width: 300px;
   }
