@@ -99,6 +99,7 @@ import coolexLogo from "../Assets/coolexLogo.png";
 import fabieLogo from "../Assets/fabieLogo.png";
 import pankajLogo from "../Assets/pankajLogo.png";
 import chandigrahFairLogo from "../Assets/chandigarhFairLogo.png";
+import chawlas2 from "../Assets/chawlas2-logo.png";
 
 import teamMembers from "../Assets/team.png";
 import happyClients from "../Assets/happy-clients.png";
@@ -216,6 +217,7 @@ let Body = () => {
     fabieLogo,
     pankajLogo,
     chandigrahFairLogo,
+    chawlas2,
     fc8,
     fc6,
     fc1,
@@ -1072,7 +1074,7 @@ let Body = () => {
                     x="0"
                     y="0"
                     viewBox="0 0 512 512"
-                    fill="#fc6404"
+                    fill="#FFFFFF"
                   >
                     <g>
                       <path
