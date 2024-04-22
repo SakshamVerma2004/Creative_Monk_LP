@@ -6,7 +6,7 @@ let MobileOptions = () => {
     <div className={styles.mobileOptions}>
       <a href="tel:9463445566" target="_blank">
         <div className={styles.callSection}>
-          <img src={call} />
+          <img src={call} class="call-button" id="callButton"/>
         </div>
       </a>
       <a
@@ -14,7 +14,7 @@ let MobileOptions = () => {
         target="_blank"
       >
         <div className={styles.whatsappSection}>
-          <img src={whatsapp} />
+          <img src={whatsapp} class="whatsapp-contact" id="whatsappSymbol"/>
         </div>
       </a>
     </div>

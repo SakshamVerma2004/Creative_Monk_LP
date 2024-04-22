@@ -1,6 +1,7 @@
 import styles from "../Styles/Body.module.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import emailjs from "@emailjs/browser";
 import bestAgencyBackground from "../Assets/best-agency-background.png";
 import servicesImage from "../Assets/servicesGridImage.jpg";
 import nextLevelBackground from "../Assets/next-level-background-image.jpg";
@@ -107,6 +108,9 @@ import digitalServices from "../Assets/digital-services.png";
 import completedTask from "../Assets/completed-task.png";
 
 let Body = () => {
+  let serviceId = "service_kcn2rg9";
+  let templateId = "template_haz4avi";
+  let publicKey = "XJQAsvRtTi0YAvyyX";
   let [successMessage, setSuccessMessage] = useState(false);
   let [errorMessage, setErrorMessage] = useState(false);
   let [name, setName] = useState("");
@@ -129,6 +133,7 @@ let Body = () => {
   let [selectedCategory, setSelectedCategory] = useState(
     "Social Media Marketing"
   );
+  let [budget, setBudget] = useState("Below 50,000 INR");
   let [displayedData, setDisplayedData] = useState([]);
   let [gridForLogo, setGridForLogo] = useState(5);
   let [gridPercentageForLogo, setGridPercentageForLogo] = useState(19);
@@ -395,10 +400,31 @@ let Body = () => {
     }
   }, []);
 
-  let submitHandler = () => {
-    if (!name.trim() || !email.trim() || !phoneNumber) {
+  let emailParams = {
+    from_name: name,
+    from_email: email,
+    to_name: "Sahil Sehgal",
+    message: `Name - ${name}\nEmail - ${email}\nPhone Number - ${phoneNumber}\nService Required - ${selectedCategory}\nBudget - ${budget}`,
+  };
+
+  let submitHandler = (e) => {
+    e.preventDefault();
+    if (
+      !name.trim() ||
+      !email.trim() ||
+      !phoneNumber.trim() ||
+      !selectedCategory ||
+      !budget
+    ) {
       return;
     }
+
+    emailjs
+      .send(serviceId, templateId, emailParams, publicKey)
+      .catch((error) => {
+        setErrorMessage(true);
+      });
+
     fetch("https://creative-monk-lp-default-rtdb.firebaseio.com/data.json", {
       method: "POST",
       headers: {
@@ -408,7 +434,8 @@ let Body = () => {
         name: name,
         email: email,
         phone_number: phoneNumber,
-        message: message,
+        service_required: selectedCategory,
+        budget: budget,
         date: new Date().toDateString(),
         time_HH_MM_SS: new Date().toLocaleTimeString(),
       }),
@@ -1545,14 +1572,50 @@ let Body = () => {
                   </p>
                 ) : (
                   <div className={styles.questionInputSection}>
-                    <h3>Message</h3>
-                    <textarea
-                      placeholder="Message"
-                      value={message}
-                      onChange={(e) => setMessage(e.target.value)}
-                    ></textarea>
+                    <h3>
+                      Service required <span style={{ color: "red" }}>*</span>
+                    </h3>
+                    <select
+                      value={selectedCategory}
+                      onChange={(e) => {
+                        setSelectedCategory(e.target.value);
+                      }}
+                      required
+                    >
+                      <option value="Social Media Marketing">
+                        Social Media Marketing
+                      </option>
+                      <option value="Paid Ads">Paid Ads</option>
+                      <option value="SEO">SEO</option>
+                      <option value="Branding">Branding</option>
+                      <option value="Packaging">Packaging</option>
+                      <option value="Website Development">
+                        Website Development
+                      </option>
+                    </select>
                   </div>
                 )}
+                <div className={styles.questionInputSection}>
+                  <h3>
+                    Budget <span style={{ color: "red" }}>*</span>
+                  </h3>
+                  <select
+                    value={budget}
+                    onChange={(e) => {
+                      setBudget(e.target.value);
+                    }}
+                    required
+                  >
+                    <option value="Below 50,000 INR">Below 50,000 INR</option>
+                    <option value="Between 50,000 INR and 1 Lakh INR">
+                      Between 50,000 INR and 1 Lakh INR
+                    </option>
+                    <option value="Between 1 Lakh INR and 2 Lakhs INR">
+                      Between 1 Lakh INR and 2 Lakhs INR
+                    </option>
+                    <option value="Above 2 Lakhs INR">Above 2 Lakhs INR</option>
+                  </select>
+                </div>
                 {successMessage ? (
                   <p
                     style={{

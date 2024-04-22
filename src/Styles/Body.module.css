@@ -25,8 +25,8 @@ img {
 }
 
 .firstCarouselItem img {
-  width: 90%;
-  height: 90%;
+  width: 120px;
+  height: 120px;
   background-color: cover;
   object-fit: contain;
 }
@@ -35,7 +35,7 @@ img {
   width: 100%;
   border-radius: 10px;
   background-color: #e5e7fcbd;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   padding-top: 50px;
   padding-bottom: 100px;
   display: flex;
@@ -78,19 +78,19 @@ img {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.numberCounterGridSection div img{
+.numberCounterGridSection div img {
   height: 60px;
 }
 
-.numberCounterGridSection div h1{
+.numberCounterGridSection div h1 {
   margin-top: 0px;
 }
 
-.numberCounterGridSection div h1 span{
+.numberCounterGridSection div h1 span {
   color: #fc6404;
 }
 
-.numberCounterGridSection div p{
+.numberCounterGridSection div p {
   width: 100%;
   margin-top: -25px;
   font-size: 17px;
@@ -275,27 +275,27 @@ h6 {
   font-size: 35px;
 }
 
-.ourServicesGridSection2{
+.ourServicesGridSection2 {
   width: 100%;
   position: relative;
   padding-bottom: 350px;
 }
 
-.singleServiceSection{
+.singleServiceSection {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.firstService{
+.firstService {
   width: 550px;
   margin: auto;
   position: relative;
   left: 14%;
 }
 
-.secondService{
+.secondService {
   width: 550px;
   margin: auto;
   position: relative;
@@ -303,7 +303,7 @@ h6 {
   margin-top: -40px;
 }
 
-.thirdService{
+.thirdService {
   width: 550px;
   margin: auto;
   position: relative;
@@ -311,7 +311,7 @@ h6 {
   margin-top: -40px;
 }
 
-.fourthService{
+.fourthService {
   width: 550px;
   margin: auto;
   position: relative;
@@ -319,7 +319,7 @@ h6 {
   margin-top: -280px;
 }
 
-.svgSection{
+.svgSection {
   width: 160px;
   height: 160px;
   background-color: white;
@@ -329,15 +329,15 @@ h6 {
   border-radius: 20px;
 }
 
-.svgInSvgService1{
+.svgInSvgService1 {
   transform: rotate(45deg);
 }
 
-.svg1{
+.svg1 {
   transform: rotate(-45deg);
 }
 
-.firstDotPoint{
+.firstDotPoint {
   width: 20px;
   height: 20px;
   background-color: white;
@@ -347,7 +347,7 @@ h6 {
   top: 20%;
 }
 
-.firstDotPointSecondService{
+.firstDotPointSecondService {
   width: 20px;
   height: 20px;
   background-color: white;
@@ -357,7 +357,7 @@ h6 {
   top: 85%;
 }
 
-.firstDotPointThirdService{
+.firstDotPointThirdService {
   width: 20px;
   height: 20px;
   background-color: white;
@@ -367,7 +367,7 @@ h6 {
   top: 85%;
 }
 
-.firstDotPointFourthService{
+.firstDotPointFourthService {
   width: 20px;
   height: 20px;
   background-color: white;
@@ -377,7 +377,7 @@ h6 {
   top: 11%;
 }
 
-.firstDottedLine{
+.firstDottedLine {
   width: 40px;
   border: 1px dashed white;
   position: absolute;
@@ -386,7 +386,7 @@ h6 {
   transform: rotate(-43deg);
 }
 
-.firstDottedLineSecondService{
+.firstDottedLineSecondService {
   width: 40px;
   border: 1px dashed white;
   position: absolute;
@@ -395,7 +395,7 @@ h6 {
   transform: rotate(43deg);
 }
 
-.firstDottedLineThirdService{
+.firstDottedLineThirdService {
   width: 40px;
   border: 1px dashed white;
   position: absolute;
@@ -404,7 +404,7 @@ h6 {
   transform: rotate(-43deg);
 }
 
-.firstDottedLineFourthService{
+.firstDottedLineFourthService {
   width: 40px;
   border: 1px dashed white;
   position: absolute;
@@ -413,7 +413,7 @@ h6 {
   transform: rotate(43deg);
 }
 
-.secondDottedLine{
+.secondDottedLine {
   width: 100px;
   border: 1px dashed white;
   position: absolute;
@@ -421,7 +421,7 @@ h6 {
   top: 6%;
 }
 
-.secondDottedLineSecondService{
+.secondDottedLineSecondService {
   width: 100px;
   border: 1px dashed white;
   position: absolute;
@@ -429,7 +429,7 @@ h6 {
   top: 109%;
 }
 
-.secondDottedLineThirdService{
+.secondDottedLineThirdService {
   width: 100px;
   border: 1px dashed white;
   position: absolute;
@@ -437,7 +437,7 @@ h6 {
   top: 109%;
 }
 
-.secondDottedLineFourthService{
+.secondDottedLineFourthService {
   width: 100px;
   border: 1px dashed white;
   position: absolute;
@@ -445,7 +445,7 @@ h6 {
   top: 1%;
 }
 
-.secondDotPoint{
+.secondDotPoint {
   width: 20px;
   height: 20px;
   background-color: white;
@@ -455,7 +455,7 @@ h6 {
   top: 1%;
 }
 
-.secondDotPointSecondService{
+.secondDotPointSecondService {
   width: 20px;
   height: 20px;
   background-color: white;
@@ -465,7 +465,7 @@ h6 {
   top: 103%;
 }
 
-.secondDotPointThirdService{
+.secondDotPointThirdService {
   width: 20px;
   height: 20px;
   background-color: white;
@@ -475,7 +475,7 @@ h6 {
   top: 103%;
 }
 
-.secondDotPointFourthService{
+.secondDotPointFourthService {
   width: 20px;
   height: 20px;
   background-color: white;
@@ -485,7 +485,7 @@ h6 {
   top: -5%;
 }
 
-.service1TextSection{
+.service1TextSection {
   text-align: left;
   position: absolute;
   width: 50%;
@@ -493,15 +493,15 @@ h6 {
   left: 60%;
 }
 
-.service1TextSection h2{
+.service1TextSection h2 {
   font-size: 25px;
 }
 
-.service1TextSection p{
+.service1TextSection p {
   margin-top: -20px;
 }
 
-.service2TextSection{
+.service2TextSection {
   text-align: left;
   position: absolute;
   width: 50%;
@@ -509,15 +509,15 @@ h6 {
   left: 40%;
 }
 
-.service2TextSection h2{
+.service2TextSection h2 {
   font-size: 25px;
 }
 
-.service2TextSection p{
+.service2TextSection p {
   margin-top: -20px;
 }
 
-.service3TextSection{
+.service3TextSection {
   text-align: right;
   position: absolute;
   width: 50%;
@@ -525,15 +525,15 @@ h6 {
   left: -44%;
 }
 
-.service3TextSection h2{
+.service3TextSection h2 {
   font-size: 25px;
 }
 
-.service3TextSection p{
+.service3TextSection p {
   margin-top: -20px;
 }
 
-.service4TextSection{
+.service4TextSection {
   text-align: right;
   position: absolute;
   width: 50%;
@@ -541,11 +541,11 @@ h6 {
   left: -64%;
 }
 
-.service4TextSection h2{
+.service4TextSection h2 {
   font-size: 25px;
 }
 
-.service4TextSection p{
+.service4TextSection p {
   margin-top: -20px;
 }
 
@@ -638,7 +638,7 @@ h6 {
 .gotQuestionBackgroundImageSection {
   width: 100%;
   border-radius: 10px;
-  padding-top: 100px;
+  padding-top: 110px;
   padding-bottom: 20px;
   box-sizing: border-box;
   padding-left: 50px;
@@ -657,8 +657,8 @@ h6 {
 }
 
 .gotQuestionSvgSection {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   background-color: white;
   border-radius: 50%;
   display: flex;
@@ -723,7 +723,6 @@ h6 {
 
 .questionInputSection select {
   width: 100%;
-  margin-bottom: 15px;
   box-sizing: border-box;
   border: 1px solid gray;
   padding-left: 10px;
@@ -731,6 +730,7 @@ h6 {
   border-radius: 5px;
   padding-right: 10px;
   height: 50px;
+  background-color: white;
 }
 
 .questionInputSection textarea {
@@ -828,8 +828,8 @@ h6 {
 }
 
 .gotQuestionSvg {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
 }
 
 @media all and (max-width: 1440px) {
@@ -837,8 +837,8 @@ h6 {
     width: 1100px;
   }
 
-  .innerNumberCounterSection{
-    width: 1100px
+  .innerNumberCounterSection {
+    width: 1100px;
   }
 
   .ourServicesSection {
@@ -858,13 +858,13 @@ h6 {
   }
 
   .gotQuestionSvgSection {
-    width: 55px;
-    height: 45px;
+    width: 100px;
+    height: 80px;
   }
 
   .gotQuestionSvg {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
   }
 
   .containerTestimonialsSection {
@@ -875,34 +875,34 @@ h6 {
     width: 1100px;
   }
 
-  .ourServicesGridSection{
+  .ourServicesGridSection {
     width: 90%;
   }
 
-  .firstService{
+  .firstService {
     width: 550px;
     margin: auto;
     position: relative;
     left: 17%;
   }
-  
-  .secondService{
+
+  .secondService {
     width: 550px;
     margin: auto;
     position: relative;
     left: 27%;
     margin-top: -30px;
   }
-  
-  .thirdService{
+
+  .thirdService {
     width: 550px;
     margin: auto;
     position: relative;
     left: 17%;
     margin-top: -30px;
   }
-  
-  .fourthService{
+
+  .fourthService {
     width: 550px;
     margin: auto;
     position: relative;
@@ -912,12 +912,15 @@ h6 {
 }
 
 @media all and (max-width: 1100px) {
+  .gotQuestionBackgroundImageSection {
+    padding-top: 80px;
+  }
   .creativeMonkServicesSection {
     width: 900px;
   }
 
-  .innerNumberCounterSection{
-    width: 900px
+  .innerNumberCounterSection {
+    width: 900px;
   }
 
   .ourServicesSection {
@@ -941,8 +944,13 @@ h6 {
   }
 
   .gotQuestionSvgSection {
-    width: 70px;
-    height: 50px;
+    width: 100px;
+    height: 70px;
+  }
+
+  .gotQuestionSvg {
+    width: 25px;
+    height: 25px;
   }
 
   .containerTestimonialsSection {
@@ -957,34 +965,26 @@ h6 {
     gap: 30px;
   }
 
-  .ourServicesGridSection{
+  .ourServicesGridSection {
     width: 100%;
   }
 
-  .firstService{
+  .firstService {
     width: 550px;
     margin: auto;
     position: relative;
     left: 1%;
   }
-  
-  .secondService{
+
+  .secondService {
     width: 550px;
     margin: auto;
     position: relative;
     left: 1%;
     margin-top: 70px;
   }
-  
-  .thirdService{
-    width: 550px;
-    margin: auto;
-    position: relative;
-    left: 50%;
-    margin-top: 120px;
-  }
-  
-  .fourthService{
+
+  .thirdService {
     width: 550px;
     margin: auto;
     position: relative;
@@ -992,11 +992,19 @@ h6 {
     margin-top: 120px;
   }
 
-  .ourServicesGridSection2{
+  .fourthService {
+    width: 550px;
+    margin: auto;
+    position: relative;
+    left: 50%;
+    margin-top: 120px;
+  }
+
+  .ourServicesGridSection2 {
     padding-bottom: 100px;
   }
 
-  .svgSection{
+  .svgSection {
     width: 160px;
     height: 160px;
     background-color: white;
@@ -1005,16 +1013,16 @@ h6 {
     justify-content: center;
     border-radius: 20px;
   }
-  
-  .svgInSvgService1{
+
+  .svgInSvgService1 {
     transform: rotate(45deg);
   }
-  
-  .svg1{
+
+  .svg1 {
     transform: rotate(-45deg);
   }
-  
-  .firstDotPoint{
+
+  .firstDotPoint {
     width: 20px;
     height: 20px;
     background-color: white;
@@ -1022,10 +1030,10 @@ h6 {
     position: absolute;
     left: 27%;
     top: 20%;
-    display: none
+    display: none;
   }
-  
-  .firstDotPointSecondService{
+
+  .firstDotPointSecondService {
     width: 20px;
     height: 20px;
     background-color: white;
@@ -1033,10 +1041,10 @@ h6 {
     position: absolute;
     left: 22%;
     top: 85%;
-    display: none
+    display: none;
   }
-  
-  .firstDotPointThirdService{
+
+  .firstDotPointThirdService {
     width: 20px;
     height: 20px;
     background-color: white;
@@ -1044,10 +1052,10 @@ h6 {
     position: absolute;
     left: 4%;
     top: 85%;
-    display: none
+    display: none;
   }
-  
-  .firstDotPointFourthService{
+
+  .firstDotPointFourthService {
     width: 20px;
     height: 20px;
     background-color: white;
@@ -1055,86 +1063,86 @@ h6 {
     position: absolute;
     left: 1%;
     top: 11%;
-    display: none
+    display: none;
   }
-  
-  .firstDottedLine{
+
+  .firstDottedLine {
     width: 40px;
     border: 1px dashed white;
     position: absolute;
     left: 29%;
     top: 15%;
     transform: rotate(-43deg);
-    display: none
+    display: none;
   }
-  
-  .firstDottedLineSecondService{
+
+  .firstDottedLineSecondService {
     width: 40px;
     border: 1px dashed white;
     position: absolute;
     left: 23%;
     top: 100%;
     transform: rotate(43deg);
-    display: none
+    display: none;
   }
-  
-  .firstDottedLineThirdService{
+
+  .firstDottedLineThirdService {
     width: 40px;
     border: 1px dashed white;
     position: absolute;
     left: 0%;
     top: 99%;
     transform: rotate(-43deg);
-    display: none
+    display: none;
   }
-  
-  .firstDottedLineFourthService{
+
+  .firstDottedLineFourthService {
     width: 40px;
     border: 1px dashed white;
     position: absolute;
     left: -3%;
     top: 9%;
     transform: rotate(43deg);
-    display: none
+    display: none;
   }
-  
-  .secondDottedLine{
+
+  .secondDottedLine {
     width: 100px;
     border: 1px dashed white;
     position: absolute;
     left: 36%;
     top: 6%;
-    display: none
+    display: none;
   }
-  
-  .secondDottedLineSecondService{
+
+  .secondDottedLineSecondService {
     width: 100px;
     border: 1px dashed white;
     position: absolute;
     left: 30%;
     top: 109%;
-    display: none
+    display: none;
   }
-  
-  .secondDottedLineThirdService{
+
+  .secondDottedLineThirdService {
     width: 100px;
     border: 1px dashed white;
     position: absolute;
     left: -18%;
     top: 109%;
-    display: none
+    display: none;
   }
-  
-  .secondDottedLineFourthService{
+
+  .secondDottedLineFourthService {
     width: 100px;
     border: 1px dashed white;
     position: absolute;
     left: -21%;
     top: 1%;
-    display: none
+    display: none;
   }
-  
-  .secondDotPoint{
+
+  .secondDotPoint {
     width: 20px;
     height: 20px;
     background-color: white;
@@ -1142,10 +1150,10 @@ h6 {
     position: absolute;
     left: 54.7%;
     top: 1%;
-    display: none
+    display: none;
   }
-  
-  .secondDotPointSecondService{
+
+  .secondDotPointSecondService {
     width: 20px;
     height: 20px;
     background-color: white;
@@ -1153,10 +1161,10 @@ h6 {
     position: absolute;
     left: 49%;
     top: 103%;
-    display: none
+    display: none;
   }
-  
-  .secondDotPointThirdService{
+
+  .secondDotPointThirdService {
     width: 20px;
     height: 20px;
     background-color: white;
@@ -1164,10 +1172,10 @@ h6 {
     position: absolute;
     left: -22%;
     top: 103%;
-    display: none
+    display: none;
   }
-  
-  .secondDotPointFourthService{
+
+  .secondDotPointFourthService {
     width: 20px;
     height: 20px;
     background-color: white;
@@ -1175,78 +1183,78 @@ h6 {
     position: absolute;
     left: -25%;
     top: -5%;
-    display: none
+    display: none;
   }
-  
-  .service1TextSection{
+
+  .service1TextSection {
     text-align: center;
     position: relative;
     width: 100%;
     top: -10%;
     left: 0%;
   }
-  
-  .service1TextSection h2{
+
+  .service1TextSection h2 {
     font-size: 25px;
   }
-  
-  .service1TextSection p{
-    margin-top: -20px;
-  }
-  
-  .service2TextSection{
-    text-align: center;
-    position: relative;
-    width: 100%;
-    top: -10%;
-    left: 0%;
-  }
-  
-  .service2TextSection h2{
-    font-size: 25px;
-  }
-  
-  .service2TextSection p{
-    margin-top: -20px;
-  }
-  
-  .service3TextSection{
-    text-align: center;
-    position: relative;
-    width: 100%;
-    top: -10%;
-    left: -80%;
-  }
-  
-  .service3TextSection h2{
-    font-size: 25px;
-  }
-  
-  .service3TextSection p{
-    margin-top: -20px;
-  }
-  
-  .service4TextSection{
-    text-align: center;
-    position: relative;
-    width: 100%;
-    top: -10%;
-    left: -80%;
-  }
-  
-  .service4TextSection h2{
-    font-size: 25px;
-  }
-  
-  .service4TextSection p{
+
+  .service1TextSection p {
     margin-top: -20px;
   }
 
-  .svgInSvgService3{
+  .service2TextSection {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    top: -10%;
+    left: 0%;
+  }
+
+  .service2TextSection h2 {
+    font-size: 25px;
+  }
+
+  .service2TextSection p {
+    margin-top: -20px;
+  }
+
+  .service3TextSection {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    top: -10%;
+    left: -80%;
+  }
+
+  .service3TextSection h2 {
+    font-size: 25px;
+  }
+
+  .service3TextSection p {
+    margin-top: -20px;
+  }
+
+  .service4TextSection {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    top: -10%;
+    left: -80%;
+  }
+
+  .service4TextSection h2 {
+    font-size: 25px;
+  }
+
+  .service4TextSection p {
+    margin-top: -20px;
+  }
+
+  .svgInSvgService3 {
     margin-left: -160%;
   }
 
-  .singleServiceSection{
+  .singleServiceSection {
     position: relative;
     display: flex;
     align-items: center;
@@ -1261,8 +1269,8 @@ h6 {
     width: 700px;
   }
 
-  .innerNumberCounterSection{
-    width: 700px
+  .innerNumberCounterSection {
+    width: 700px;
   }
 
   .innerNumberCounterSection h1 {
@@ -1276,12 +1284,12 @@ h6 {
   .innerNumberCounterSection p {
     width: 100%;
   }
-  
-  .numberCounterGridSection div h1{
+
+  .numberCounterGridSection div h1 {
     margin-top: 5px;
   }
-  
-  .numberCounterGridSection div p{
+
+  .numberCounterGridSection div p {
     margin-top: -15px;
     font-size: 16px;
   }
@@ -1383,15 +1391,15 @@ h6 {
     width: 700px;
   }
 
-  .thirdService{
+  .thirdService {
     width: 550px;
     margin: auto;
     position: relative;
     left: 64%;
     margin-top: 120px;
   }
-  
-  .fourthService{
+
+  .fourthService {
     width: 550px;
     margin: auto;
     position: relative;
@@ -1401,15 +1409,15 @@ h6 {
 }
 
 @media all and (max-width: 750px) {
-  .thirdService{
+  .thirdService {
     width: 550px;
     margin: auto;
     position: relative;
     left: 82%;
     margin-top: 120px;
   }
-  
-  .fourthService{
+
+  .fourthService {
     width: 550px;
     margin: auto;
     position: relative;
@@ -1420,8 +1428,8 @@ h6 {
     width: 50%;
   }
 
-  .innerNumberCounterSection{
-    width: 550px
+  .innerNumberCounterSection {
+    width: 550px;
   }
 
   .numberCounterGridSection {
@@ -1553,31 +1561,31 @@ h6 {
 }
 
 @media all and (max-width: 600px) {
-  .firstService{
+  .firstService {
     width: 400px;
     margin: auto;
     position: relative;
     left: 1%;
     margin-top: 50px;
   }
-  
-  .secondService{
+
+  .secondService {
     width: 400px;
     margin: auto;
     position: relative;
     left: 1%;
     margin-top: 70px;
   }
-  
-  .thirdService{
+
+  .thirdService {
     width: 400px;
     margin: auto;
     position: relative;
     left: 73%;
     margin-top: 80px;
   }
-  
-  .fourthService{
+
+  .fourthService {
     width: 400px;
     margin: auto;
     position: relative;
@@ -1592,8 +1600,8 @@ h6 {
     width: 450px;
   }
 
-  .innerNumberCounterSection{
-    width: 450px
+  .innerNumberCounterSection {
+    width: 450px;
   }
 
   .numberCounterGridSection {
@@ -1729,31 +1737,31 @@ h6 {
 }
 
 @media all and (max-width: 500px) {
-  .firstService{
+  .firstService {
     width: 350px;
     margin: auto;
     position: relative;
     left: 1%;
     margin-top: 50px;
   }
-  
-  .secondService{
+
+  .secondService {
     width: 350px;
     margin: auto;
     position: relative;
     left: 1%;
     margin-top: 70px;
   }
-  
-  .thirdService{
+
+  .thirdService {
     width: 350px;
     margin: auto;
     position: relative;
     left: 80%;
     margin-top: 80px;
   }
-  
-  .fourthService{
+
+  .fourthService {
     width: 350px;
     margin: auto;
     position: relative;
@@ -1765,8 +1773,8 @@ h6 {
     width: 100%;
   }
 
-  .innerNumberCounterSection{
-    width: 350px
+  .innerNumberCounterSection {
+    width: 350px;
   }
 
   .numberCounterGridSection {
@@ -1920,37 +1928,37 @@ h6 {
     width: 100%;
   }
 
-  .ourServicesIndividualServiceSection h2{
+  .ourServicesIndividualServiceSection h2 {
     font-size: 27px;
   }
 }
 
 @media all and (max-width: 400px) {
-  .firstService{
+  .firstService {
     width: 300px;
     margin: auto;
     position: relative;
     left: 1%;
     margin-top: 50px;
   }
-  
-  .secondService{
+
+  .secondService {
     width: 300px;
     margin: auto;
     position: relative;
     left: 1%;
     margin-top: 70px;
   }
-  
-  .thirdService{
+
+  .thirdService {
     width: 300px;
     margin: auto;
     position: relative;
     left: 80%;
     margin-top: 80px;
   }
-  
-  .fourthService{
+
+  .fourthService {
     width: 300px;
     margin: auto;
     position: relative;
@@ -1961,8 +1969,8 @@ h6 {
     width: 300px;
   }
 
-  .innerNumberCounterSection{
-    width: 300px
+  .innerNumberCounterSection {
+    width: 300px;
   }
 
   .numberCounterGridSection {
